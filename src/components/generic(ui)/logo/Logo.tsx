@@ -1,10 +1,21 @@
 import "./Logo.css"
+import React from "react";
 
 
+export interface LogoProps{
+    props?: any;
+    children?: React.ReactNode;
+    type?:string;
+    className?:string;
+}
 
-const Logo = () => {
+const Logo: React.FunctionComponent <LogoProps> = ({type,
+    className,
+    children
+}) => {
     return (
-     <div className="logo">
+     <div  className={`logo ${className}`} >
+        <span className={`logo ${className}-small`}>facebook</span>
      </div>
     )
 }

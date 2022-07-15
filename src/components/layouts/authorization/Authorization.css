@@ -1,0 +1,51 @@
+.authorization {
+  
+    display:flex;
+    flex-direction: column;
+    width: 270px;
+    background-color:white;
+   padding: 5px 5px;
+   
+   border: 2px solid rgba(236, 234, 234, 0.361);
+   border-radius: 3px;
+   box-shadow: 7px 5px 10px 5px rgb(218, 215, 215); 
+   margin-bottom: 10px;
+  /* border-image: linear-gradient(45deg,rgba(215, 214, 214, 0.452),rgba(163, 163, 164, 0.073)) 3 ; */
+    
+}
+.authorization-part-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+   padding-left: 200px;
+   
+    
+}
+.header-authorization {
+    width: 30%;
+    display: flex;
+    margin-right: 5px;
+    font-size: 11px;
+    padding: 0;
+}
+
+
+
+
+.forget-password {
+    text-align: center;
+    padding: 15px 0px;
+    font-size: small;
+    color: rgb(60, 99, 240);
+    border-bottom: 3px solid rgba(160, 160, 160, 0.098);
+    border-radius: 3px;
+}
+.forget-password-header {
+    margin-left: 7px;
+    text-align: center;
+    font-size: 3px;
+    font-size: small;
+    color: rgb(60, 99, 240);
+    
+}

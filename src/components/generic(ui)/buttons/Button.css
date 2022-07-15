@@ -1,0 +1,41 @@
+.green-authorization{
+    align-self: center;
+    background-color:rgb(124, 209, 40);
+    color: white;
+    border: 2px solid rgb(124, 209, 40);
+    border-radius: 5px;
+    width: 70%;
+    padding: 9px 5px;
+    margin: 17px 0 ;
+    font-size: 95%;
+  
+}
+.blue-authorization {
+    background-color:rgb(60, 99, 240);
+    color: white;
+    border: 2px solid rgb(60, 99, 240);
+    border-radius: 5px;
+   width: 100%;
+   padding: 7px 0;
+   text-align: center;
+   
+}
+.light-button {
+    align-items: center;
+    background-color: rgb(234, 241, 241);
+    border:2px solid rgba(190, 187, 187, 0.208);
+    border-radius: 4px;
+    color: rgba(0, 0, 0, 0.66);
+    font-size: 15px;
+   max-width: 27px;
+   padding: 0;
+}
+
+.header-button {
+    width: fit-content;
+    border-radius: 5px;
+    padding: 5px 5px;
+    height: 50%;
+    font-size: 65%;
+   
+}

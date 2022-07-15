@@ -1,0 +1,34 @@
+.footer {
+    padding: 10px 250px;
+    font-size: 70%;
+}
+.navigation-links {
+    border-top: 1.5px solid rgba(180, 174, 174, 0.74);
+    border-radius: 3px;
+}
+.links-list {
+    color:rgba(52, 110, 181, 0.904);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    white-space: break-spaces;
+    
+    padding-top: 10px;
+    
+}
+.languages-list {
+    color:rgba(52, 110, 181, 0.904);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    white-space: break-spaces;
+    padding-right: 10px;
+    
+}
+.footer-languages{
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+    padding-bottom: 10px;
+  
+}

@@ -1,0 +1,13 @@
+.first-page-header {
+    visibility: collapse;
+    background-color: antiquewhite;
+}
+.header {
+    padding: 5px 10px ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+}
