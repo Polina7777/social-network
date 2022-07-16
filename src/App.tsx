@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import AccountSearch from './components/layouts/account-search/AccountSearch';
 //mport FirstPage from './components/page/first-page/First-page';
 //import Main from './components/page/first-page/main/Main';
 //import Authorization from './components/layouts/authorization/Authorization-block';
@@ -7,12 +8,12 @@ import './App.css';
 // import Button from './components/generic(ui)/buttons/Button';
 // import Input from './components/generic(ui)/inputs/Input';
 // import Logo from './components/generic(ui)/logo/Logo';
-import SecondPage from './components/page/second-page/Second-page';
+//import SecondPage from './components/page/second-page/Second-page';
 
 function App() {
   return (
     <div className="App">
-<SecondPage></SecondPage>
+<AccountSearch></AccountSearch>
     </div>
   );
 }

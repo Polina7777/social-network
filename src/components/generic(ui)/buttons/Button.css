@@ -27,7 +27,7 @@
     border-radius: 4px;
     color: rgba(0, 0, 0, 0.66);
     font-size: 15px;
-   max-width: 27px;
+    width: 27px;
    padding: 0;
 }
 
@@ -38,4 +38,16 @@
     height: 50%;
     font-size: 65%;
    
+}
+.account-search-button {
+    width: 100%;
+    font-weight: 600;
+    text-align: center;
+    padding: 7px;
+    
+}
+.blue-button-search {
+    padding: 7px 17px;
+    margin-left: 10px;
+    font-weight: 600;
 }

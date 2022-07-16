@@ -16,3 +16,9 @@ input{
     padding: 5px 12px;
     height: 50%;
 }
+
+.account-search-input {
+    padding: 10px 7px;
+    width: 97%;
+ 
+}
