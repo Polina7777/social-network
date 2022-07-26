@@ -15,7 +15,7 @@ const Logo: React.FunctionComponent <LogoProps> = ({type,
 }) => {
     return (
      <div  className={`logo ${className}`} >
-        <span className={`logo ${className}-small`}>facebook</span>
+        <span className={`logo ${className}_small`}>facebook</span>
      </div>
     )
 }

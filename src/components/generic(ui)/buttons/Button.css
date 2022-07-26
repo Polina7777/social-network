@@ -1,5 +1,4 @@
-.green-authorization{
-    align-self: center;
+.green{
     background-color:rgb(124, 209, 40);
     color: white;
     border: 2px solid rgb(124, 209, 40);
@@ -10,44 +9,64 @@
     font-size: 95%;
   
 }
-.blue-authorization {
+.blue {
     background-color:rgb(60, 99, 240);
     color: white;
     border: 2px solid rgb(60, 99, 240);
     border-radius: 5px;
-   width: 100%;
    padding: 7px 0;
    text-align: center;
    
 }
-.light-button {
+.extra-small {
+    width: 4%;
+    padding: 1px 0px;
+}
+.small {
+    width: 10%;
+}
+.medium {
+    width: 50%;
+    padding: 7px 0;
+}
+.big {
+    width: 100%;
+}
+.light {
     align-items: center;
+    padding: 8px 15px;
+    margin-right: 10px;
     background-color: rgb(234, 241, 241);
     border:2px solid rgba(190, 187, 187, 0.208);
     border-radius: 4px;
     color: rgba(0, 0, 0, 0.66);
-    font-size: 15px;
-    width: 27px;
-   padding: 0;
+    font-size: 16px;
+   
+    
 }
 
-.header-button {
+.header_button-blue {
+    background-color:rgb(60, 99, 240);
+    color: white;
+    border: 2px solid rgb(60, 99, 240);
+    border-radius: 5px;
     width: fit-content;
     border-radius: 5px;
-    padding: 5px 5px;
+    padding: 6px 8px;
     height: 50%;
-    font-size: 65%;
+    margin: 0px 5px;
    
 }
-.account-search-button {
+
+/* .account-search-button {
     width: 100%;
     font-weight: 600;
     text-align: center;
     padding: 7px;
     
-}
-.blue-button-search {
-    padding: 7px 17px;
-    margin-left: 10px;
-    font-weight: 600;
+} */
+.account-search_button-blue {
+    font-size: 16px;
+    padding: 8px 19px;
+    font-weight: 500;
 }

@@ -1,7 +1,4 @@
-.first-page-header {
-    visibility: collapse;
-    background-color: antiquewhite;
-}
+
 .header {
     padding: 5px 10px ;
     display: flex;
@@ -10,4 +7,15 @@
     width: 100%;
     align-items: center;
     text-align: center;
+}
+.header_authorization-part{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    padding-right: 30px;
+}
+.forget-password_header {
+    color: rgb(60, 99, 240);
+    text-decoration: none;
 }

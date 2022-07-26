@@ -5,9 +5,10 @@ import "./Button.css"
 
 export interface ButtonProps {
    className?:string;
+   buttonClassName?:string;
    props?: any;
    children?: React.ReactNode;
-   color?:'primary'|'secondary'| 'blue'| 'green';
+   color?:'primary'|'light'| 'blue'| 'green';
    onClick?: (event:React.MouseEvent<HTMLButtonElement>) => void;
    disabled?: boolean;
 }
@@ -16,13 +17,14 @@ export interface ButtonProps {
 
 const Button: React.FunctionComponent <ButtonProps> = ({
   className,
+  buttonClassName,
    onClick,
    children,
    color,
    disabled,
 }) => {
    return(
-    <button className = {color === 'green'? `${className} green-authorization`: `${className} blue-authorization`}
+    <button className = {`${color}  ${className}-${color}`} 
      onClick= {onClick} color = {color} disabled = {disabled} >
       {children}
 

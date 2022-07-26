@@ -1,14 +1,14 @@
-.main {
+.main{
     display: flex;
     flex-direction: row;
     justify-content: center;
     width: 100%;
     background-color: rgb(230, 232, 234);
-    padding: 10px 30px;
     font-size: 80%;
 
 }
-.logo-title {
+
+.logo_title {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,7 +17,7 @@
     margin-right: 50px;
     
 }
-.login-text {
+.login_text {
     display: flex;
     flex-direction: column;
    align-items: center;
@@ -27,4 +27,6 @@
     padding: 30px 20px 30px 20px;
     font-weight: 400;
 }
+
+
 

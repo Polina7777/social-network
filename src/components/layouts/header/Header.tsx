@@ -3,6 +3,8 @@ import Button from "../../generic(ui)/buttons/Button"
 
 import "./Header.css"
 import Logo from "../../generic(ui)/logo/Logo";
+import { useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export interface HeaderProps  {
     className?: string;
@@ -11,17 +13,22 @@ export interface HeaderProps  {
    
 }
 
-const Header: React.FunctionComponent<HeaderProps> = ({type,inputClassName,className}) => {
+const Header: React.FunctionComponent<HeaderProps> | any = () => {
+    let location = useLocation();
+    if(location.pathname !== '/accountsearch') {
+        return 
+    }
     return(
-        <div className= {type ==='firstPage'? "first-page-header": 'header'}>
-            <Logo className= 'header-logo' ></Logo>
-            <div className="authorization-part-header">
-            <Input className="header-authorization authorization-login" inputClassName="header-input" placeholder ='Электронный адрес или номер телефона'></Input>
-            <Input className="header-authorization authorization-password" inputClassName="header-input" placeholder ='Пароль'></Input>
-            <Button color='blue' className="header-button">Вход</Button>
+        <div className="header">
+            <Logo className= 'header_logo' ></Logo>
+            <div className="header_authorization-part">
+            <Input className="header_authorization authorization_login" inputClassName="header-input" placeholder ='Электронный адрес или номер телефона'></Input>
+            <Input className="header_authorization authorization_password" inputClassName="header-input" placeholder ='Пароль'></Input>
+            <Button color='blue' className="header_button">Вход</Button>
            
-       <span className="forget-password-header">Забыли пароль?</span>
+       <Link to = 'accountsearch' className="forget-password_header">Забыли пароль?</Link>
             </div>
+            
         </div>
     )
 }

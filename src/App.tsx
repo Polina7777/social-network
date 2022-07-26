@@ -1,21 +1,25 @@
 import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
 import './App.css';
-import AccountSearch from './components/layouts/account-search/AccountSearch';
-//mport FirstPage from './components/page/first-page/First-page';
-//import Main from './components/page/first-page/main/Main';
-//import Authorization from './components/layouts/authorization/Authorization-block';
+import Footer from './components/layouts/footer/Footer';
+import Header from './components/layouts/header/Header';
+import Main from './components/layouts/main/Main';
 
-// import Button from './components/generic(ui)/buttons/Button';
-// import Input from './components/generic(ui)/inputs/Input';
-// import Logo from './components/generic(ui)/logo/Logo';
-//import SecondPage from './components/page/second-page/Second-page';
 
-function App() {
+
+
+const App: React.FunctionComponent = () => {
+
   return (
+    <BrowserRouter>
     <div className="App">
-<AccountSearch></AccountSearch>
+      <Header/>
+      <Main/>
+    <Footer/>
     </div>
+    </BrowserRouter>
   );
+
 }
 
 // const string: string = 'String';

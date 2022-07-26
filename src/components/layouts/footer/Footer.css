@@ -6,7 +6,7 @@
     border-top: 1.5px solid rgba(180, 174, 174, 0.74);
     border-radius: 3px;
 }
-.links-list {
+.links_list {
     color:rgba(52, 110, 181, 0.904);
     display: flex;
     flex-direction: row;
@@ -16,7 +16,7 @@
     padding-top: 10px;
     
 }
-.languages-list {
+.languages_list {
     color:rgba(52, 110, 181, 0.904);
     display: flex;
     flex-direction: row;
@@ -25,7 +25,7 @@
     padding-right: 10px;
     
 }
-.footer-languages{
+.footer_languages{
     display: flex;
     flex-direction: row;
     white-space: nowrap;
