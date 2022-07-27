@@ -19,3 +19,15 @@
     color: rgb(60, 99, 240);
     text-decoration: none;
 }
+
+@media(max-width:500px) {
+    .header{
+        display: flex;
+        flex-direction: column; 
+        font-size: 14px;
+    }
+    .header-input{
+        font-size: 14px;
+    }
+   
+}

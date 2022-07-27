@@ -25,7 +25,9 @@
     word-spacing: 5px;
     border-top: 1px solid rgba(52, 110, 181, 0.39);
     padding-top: 10px;
+    text-align: start;
 }
+
 .languages_list {
     color:rgba(52, 110, 181, 0.904);
     display: flex;
