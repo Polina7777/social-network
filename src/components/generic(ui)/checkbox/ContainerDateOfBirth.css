@@ -1,0 +1,41 @@
+.date-of-birth_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.day-of-birth_container {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 40%;
+    border:2px solid rgba(190, 187, 187, 0.208);
+    border-radius: 5px;
+    padding: 9px 12px;
+
+}
+.month-of-birth_container {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 40%;
+    border:2px solid rgba(190, 187, 187, 0.208);
+    border-radius: 5px;
+    padding: 9px 12px;
+   
+}
+.year-of-birth_container {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 40%;
+    border:2px solid rgba(190, 187, 187, 0.208);
+    border-radius: 5px;
+    padding: 9px 12px;
+   ;
+}
+select {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: none;
+    color: rgba(0, 0, 0, 0.473);
+    font-size:  17px;
+}

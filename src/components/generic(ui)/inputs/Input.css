@@ -24,11 +24,17 @@ input{
 }
 
 .name_input{
-    width: 80%;
+    width: 85%;
    
  margin-right: 10px;
 }
 .surname_input{
-    width: 80%;
+    width: 85%;
  
+}
+.registration_input-login {
+  width:98%
+}
+.registration_input-password{
+    width:98%;
 }

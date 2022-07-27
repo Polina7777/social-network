@@ -8,16 +8,14 @@
    border: 2px solid rgba(236, 234, 234, 0.361);
    border-radius: 3px;
    box-shadow: 7px 5px 10px 5px rgb(218, 215, 215); 
-   margin: 10%;
-  /* border-image: linear-gradient(45deg,rgba(215, 214, 214, 0.452),rgba(163, 163, 164, 0.073)) 3 ; */
-    
+   margin: 7%;
 }
-/* .authorization_login {
-    margin-right: 5px;
+@media(max-width: 700px) {
+    .authorization{
+        margin: 100px 0;
+    }
 }
-.authorization_password {
-    margin-right: 5px;
-} */
+
 
 .header_authorization {
     display: flex;

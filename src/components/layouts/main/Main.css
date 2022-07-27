@@ -7,7 +7,12 @@
     font-size: 80%;
 
 }
-
+@media(max-width: 700px) {
+    .main {
+      font-size: 19px;
+     
+    }
+}
 .logo_title {
     display: flex;
     flex-direction: column;

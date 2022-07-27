@@ -3,6 +3,7 @@ import { useState } from "react";
 import "./Input.css"
 
  export interface InputProps {
+   value?:string
    id?:string;
   className?: string,
     type?: string;
@@ -19,11 +20,10 @@ const Input: React.FC<InputProps> = ({type,id,children,placeholder,className,inp
    const [value,setValue] = useState('')
    // const handlerOnChange = () => {
    //     postHandler(value)
-   //}
+   // }
     return (
      <div className = {className}>
-        <input id={id} className={inputClassName}  type={type} placeholder= {placeholder} value={value} onChange={(event: React.ChangeEvent<HTMLInputElement>)=>setValue(event.target.value)}>    
-          
+        <input id={id} className={inputClassName} type={type} placeholder= {placeholder} value={value} onChange={(event: React.ChangeEvent<HTMLInputElement>)=>setValue(event.target.value)}>       
         </input>
         {value} 
      </div>
