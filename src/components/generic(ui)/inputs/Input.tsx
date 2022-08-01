@@ -5,14 +5,12 @@ import "./Input.css"
  export interface InputProps {
    value?:string
    id?:string;
-  className?: string,
-    type?: string;
-    children?:React.ReactNode;
-    placeholder?:string;
-    inputClassName?:string
-    postHandler?: (value: string) => void;
-    
-
+   className?: string,
+   type?: string;
+   children?:React.ReactNode;
+   placeholder?:string;
+   inputClassName?:string
+   postHandler?: (value: string) => void;
  }
 
 
@@ -22,10 +20,9 @@ const Input: React.FC<InputProps> = ({type,id,children,placeholder,className,inp
    //     postHandler(value)
    // }
     return (
-     <div className = {className}>
-        <input id={id} className={inputClassName} type={type} placeholder= {placeholder} value={value} onChange={(event: React.ChangeEvent<HTMLInputElement>)=>setValue(event.target.value)}>       
+     <div className={className}>
+        <input id={id} type="text" placeholder= {placeholder} value={value} onChange={(event: React.ChangeEvent<HTMLInputElement>)=>setValue(event.target.value)}>       
         </input>
-        {value} 
      </div>
     )
 }
