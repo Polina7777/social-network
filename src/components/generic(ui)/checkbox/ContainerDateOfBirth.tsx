@@ -1,5 +1,6 @@
 import { ReactNode, SetStateAction, useState } from "react";
 import "./ContainerDateOfBirth.css";
+import SelectInput, { SelectOption } from "./Select-input";
 
 export interface ContainerDateOfBirthProps {
   type?: string;
@@ -22,15 +23,19 @@ const ContainerDateOfBirth: React.FunctionComponent<
   const [year, setYear] = useState('')
 
   const checkValidYears = (value: any) => {
-    if(value > '2002') {
+    if (value > '2002') {
       return
     }
     setYear(value)
   }
 
-  const getDayOptions = (): ReactNode[] => {
-    return new Array(31).fill(0).map((item, index) => <option key={index} value={index + 1}>{index + 1}</option>)
+  const getDayOptions = (): SelectOption[] => {
+    return new Array(31).fill(0).map((item, index) => ({
+      value: index + 1,
+      text: index + 1
+    }))
   }
+
   const getMonthOptions = (): ReactNode[] => data.month.map((item, index) => <option key={index} value={index + 1}>{item}</option>)
   const getYearOptions = (): ReactNode[] => {
     const max = new Date().getFullYear()
@@ -45,11 +50,8 @@ const ContainerDateOfBirth: React.FunctionComponent<
   return (
     <div className="date-of-birth_container">
       <p className="day-of-birth_title">Дата рождения</p>
-      <div className="day-of-birth_container">
-        <select name="day" id="day-select">
-          {getDayOptions()}
-        </select>
-      </div>
+      <div></div>
+        <SelectInput name="day" id="day-select" options={getDayOptions()} />
       <div className="month-of-birth_container">
         <select name="month" id="month-select" value={month} onChange={(event) => setMonth(event.target.value)}>
           {getMonthOptions()}

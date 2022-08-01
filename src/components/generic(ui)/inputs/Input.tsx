@@ -21,7 +21,7 @@ const Input: React.FC<InputProps> = ({type,id,children,placeholder,className,inp
    // }
     return (
      <div className={className}>
-        <input id={id} type="text" placeholder= {placeholder} value={value} onChange={(event: React.ChangeEvent<HTMLInputElement>)=>setValue(event.target.value)}>       
+        <input className="input" id={id} type="text" placeholder= {placeholder} value={value} onChange={(event: React.ChangeEvent<HTMLInputElement>)=>setValue(event.target.value)}>       
         </input>
      </div>
     )
