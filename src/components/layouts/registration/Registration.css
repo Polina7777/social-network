@@ -5,6 +5,11 @@
     margin: 0 3% 3%;
 }
 
+.registration_logo {
+    width: 300px;
+    height: 100px;
+}
+
 .registration {
 display:flex;
 flex-direction: column;
@@ -40,19 +45,22 @@ margin-bottom: 10px;
   font-size: 14px;
   color: rgba(0, 0, 0, 0.507);
 }
-.fullName {
+.registration__full-name {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    
-   margin-bottom: 10px;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 10px;
 }
-.name {
-    width: 50%;
+.registration__password-and-email {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
-.surname {
-    width: 50%;
+
+.registration__input {
+    flex: 1;
 }
+
 .login_password {
     display: flex;
     flex-direction: column;

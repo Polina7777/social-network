@@ -1,0 +1,16 @@
+
+.select-input{
+    width: 100%;
+    height: 40px;
+    border: 2px solid rgba(190, 187, 187, 0.208);
+    border-radius: 5px;
+    color: rgba(0, 0, 0, 0.66);
+    font-size: 14px;
+    font-stretch: ultra-expanded;
+    padding: 0px 10px;
+    min-width: 160px;
+}
+
+.select-input-container {
+    flex: 1;
+}

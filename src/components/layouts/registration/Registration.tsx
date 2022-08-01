@@ -6,6 +6,7 @@ import Input from "../../generic(ui)/inputs/Input";
 import Logo from "../../generic(ui)/logo/Logo";
 import "./Registration.css";
 
+
 export interface RegistrationProps {
   value?: string;
   type?: string;
@@ -18,58 +19,61 @@ export interface RegistrationProps {
   handlerOnChange?: () => void;
 }
 
+const data = {
+  PAGES: {
+    REGISTRATION: {
+      HEADER: {
+        TITLE: 'Создать аккаунт',
+        SUB_TITLE: 'Быстро и легко'
+      },
+      OTHER_INFORMATION_TEXT: "Люди,которые пользуются нашим сервисом, могли загрузить вашу контактную информацию на Facebook.",
+      LINK_MORE: 'Подробнее',
+      INPUTS_PLACEHOLDER: {
+        NAME: 'Имя'
+      }
+    }
+  }
+}
+
 const Registration: React.FunctionComponent<RegistrationProps> = () => {
-  const otherInformationText =
-    " Люди,которые пользуются нашим сервисом, могли загрузить вашу контактную информацию на Facebook.";
   const agreementText =
     " Нажимая кнопку Регистрация, вы принимаете Условия, Политику использования данных и Политику в отношении файлов cookie. Вы можете получать от нас SMS-уведомления, отказаться от которых можно в любой момент.";
   return (
     <div className="registration_container">
-      <div className="registration_logo">
-        <Logo className="registration_logo"></Logo>
-      </div>
-
-      <div className="registration">
-        <div className="registration_article">
-          <h3 className="registration_title">Создать аккаунт</h3>
-          <h5 className="registration_text">Быстро и легко</h5>
-        </div>
-        <div className="fullName">
+      <Logo className="registration_logo"></Logo>
+      <section className="registration">
+        <header className="registration_article">
+          <h1 className="registration_title">{data.PAGES.REGISTRATION.HEADER.TITLE}</h1>
+          <h2 className="registration_text">{data.PAGES.REGISTRATION.HEADER.SUB_TITLE}</h2>
+        </header>
+        <div className="registration__full-name">
           <Input
-            className="name"
-            inputClassName="name_input"
+            className="registration__input"
             placeholder="Имя"
           ></Input>
           <Input
-            className="surname"
-            inputClassName="surname_input"
+            className="registration__input"
             placeholder="Фамилия"
           ></Input>
         </div>
-        <div className="login-password">
+        <div className="registration__password-and-email">
           <Input
-            className="input_authorization authorization_login"
-            inputClassName="registration_input-login"
+            className="registration__input"
             placeholder="Электронный адрес или номер телефона"
           ></Input>
           <Input
-            className="input_authorization authorization_password"
-            inputClassName="registration_input-password"
+            className="registration__input"
             placeholder="Пароль"
           ></Input>
         </div>
-        <h5 className="day-of-birth_title">Дата рождения</h5>
-        <ContainerDateOfBirth></ContainerDateOfBirth>
-        {/* <div className="date-of-birth">
-  
 
-          <Input type="text" className="day-of-birth"></Input>
-          <Input type="fieldset" className="month-of-birth"></Input>
-          <Input type="fieldset" className="year-of-birth"></Input>
-        </div> */}
+
+        <ContainerDateOfBirth></ContainerDateOfBirth>
+
+
         <h5 className="sex_title">Пол</h5>
         <div className="sex">
-      
+
           <div className="sex_box woman_box">
             <label htmlFor="woman">Женщина</label>
             <Input
@@ -95,8 +99,10 @@ const Registration: React.FunctionComponent<RegistrationProps> = () => {
         </div>
         <div className="other_information">
           <h3 className="other_information-text">
-            {otherInformationText} Подробнее
+            {data.PAGES.REGISTRATION.OTHER_INFORMATION_TEXT + ' '}
+            <Link to={"#"}>{data.PAGES.REGISTRATION.LINK_MORE}</Link>
           </h3>
+
           {/* <h3>Подробнее</h3> */}
         </div>
         <div className="agreement_text">
@@ -108,7 +114,7 @@ const Registration: React.FunctionComponent<RegistrationProps> = () => {
             У вас уже есть аккаунт?
           </Link>
         </div>
-      </div>
+      </section>
     </div>
   );
 };

@@ -1,22 +1,17 @@
 import "./Logo.css"
 import React from "react";
+import logo from '../../../assets/image/facebook-logo.svg'
 
 
 export interface LogoProps{
-    props?: any;
-    children?: React.ReactNode;
-    type?:string;
-    className?:string;
+    className?: string
 }
 
-const Logo: React.FunctionComponent <LogoProps> = ({type,
-    className,
-    children
-}) => {
+const Logo: React.FunctionComponent <LogoProps> = ({className}) => {
     return (
-     <div  className={`logo ${className}`} >
-        <span className={`logo ${className}_small`}>facebook</span>
-     </div>
+        <div className={className}>
+            <img src={logo} alt="logo" className="logo" />
+        </div>
     )
 }
 export default Logo

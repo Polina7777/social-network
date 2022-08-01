@@ -6,6 +6,7 @@ import "./Input.css"
  export interface InputProps {
    value?:string
    id?:string;
+<<<<<<< HEAD
   className?: string,
     type?: string;
     children?:React.ReactNode;
@@ -18,6 +19,14 @@ import "./Input.css"
     ref?:any;
 
 
+=======
+   className?: string,
+   type?: string;
+   children?:React.ReactNode;
+   placeholder?:string;
+   inputClassName?:string
+   postHandler?: (value: string) => void;
+>>>>>>> 248ee5d6a31ce7b2ace18fb57d226840fe52ab87
  }
 
 
@@ -29,10 +38,15 @@ const Input: React.FC<InputProps> = ({type,id,ref,children,placeholder,className
    //     postHandler?.(value)
    //    console.log(value)} 
     return (
+<<<<<<< HEAD
      <div className = {className}>
         <input ref={ref} onChange={inputOnChange} id={id} className={inputClassName} type={type} placeholder= {placeholder} value={value} 
       //   onChange={(event: React.ChangeEvent<HTMLInputElement>)=>setValue(event.target.value)}
        onClick={handlerOnChange}>       
+=======
+     <div className={className}>
+        <input className="input" id={id} type="text" placeholder= {placeholder} value={value} onChange={(event: React.ChangeEvent<HTMLInputElement>)=>setValue(event.target.value)}>       
+>>>>>>> 248ee5d6a31ce7b2ace18fb57d226840fe52ab87
         </input>
      </div>
     )
