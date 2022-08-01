@@ -6,6 +6,7 @@ import Input from "../../generic(ui)/inputs/Input";
 import Logo from "../../generic(ui)/logo/Logo";
 import "./Registration.css";
 
+
 export interface RegistrationProps {
   value?: string;
   type?: string;
@@ -25,10 +26,7 @@ const Registration: React.FunctionComponent<RegistrationProps> = () => {
     " Нажимая кнопку Регистрация, вы принимаете Условия, Политику использования данных и Политику в отношении файлов cookie. Вы можете получать от нас SMS-уведомления, отказаться от которых можно в любой момент.";
   return (
     <div className="registration_container">
-      <div className="registration_logo">
         <Logo className="registration_logo"></Logo>
-      </div>
-
       <div className="registration">
         <div className="registration_article">
           <h3 className="registration_title">Создать аккаунт</h3>
