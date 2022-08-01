@@ -1,6 +1,7 @@
 
-import { useState } from "react";
+ import { useState, useRef} from "react";
 import "./Input.css"
+
 
  export interface InputProps {
    value?:string
@@ -9,23 +10,30 @@ import "./Input.css"
     type?: string;
     children?:React.ReactNode;
     placeholder?:string;
-    inputClassName?:string
-    postHandler?: (value: string) => void;
-    
+    inputClassName?:string;
+    postHandler?: (value: any) => void;
+    handlerOnChange?:(value:any) => void;
+    inputEvent?:(value:any) => void;
+    inputOnChange?:(value:any) => void;
+    ref?:any;
+
 
  }
 
 
-const Input: React.FC<InputProps> = ({type,id,children,placeholder,className,inputClassName,postHandler}) => {
+const Input: React.FC<InputProps> = ({type,id,ref,children,placeholder,className,inputClassName,postHandler,inputOnChange,handlerOnChange}) => {
    const [value,setValue] = useState('')
-   // const handlerOnChange = () => {
-   //     postHandler(value)
-   // }
+   // const inputRef = useRef('')
+   // const focus = () => inputRef.current.focus()
+   //  const handlerOnChange = () => { 
+   //     postHandler?.(value)
+   //    console.log(value)} 
     return (
      <div className = {className}>
-        <input id={id} className={inputClassName} type={type} placeholder= {placeholder} value={value} onChange={(event: React.ChangeEvent<HTMLInputElement>)=>setValue(event.target.value)}>       
+        <input ref={ref} onChange={inputOnChange} id={id} className={inputClassName} type={type} placeholder= {placeholder} value={value} 
+      //   onChange={(event: React.ChangeEvent<HTMLInputElement>)=>setValue(event.target.value)}
+       onClick={handlerOnChange}>       
         </input>
-        {value} 
      </div>
     )
 }
