@@ -1,36 +1,23 @@
-.date-of-birth_container {
+.date-of-birth__container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
-
-}
-.day-of-birth_container {
-    display: flex;
-    flex-direction: column-reverse;
-    width: 40%;
-    border:2px solid rgba(190, 187, 187, 0.208);
-    border-radius: 5px;
-    padding: 9px 12px;
-
-}
-.month-of-birth_container {
-    display: flex;
-    flex-direction: column-reverse;
-    width: 40%;
-    border:2px solid rgba(190, 187, 187, 0.208);
-    border-radius: 5px;
-    padding: 9px 12px;
    
+
 }
-.year-of-birth_container {
+.day-of-birth__container {
     display: flex;
-    flex-direction: column-reverse;
-    width: 40%;
-    border:2px solid rgba(190, 187, 187, 0.208);
-    border-radius: 5px;
-    padding: 9px 12px;
-   ;
+    flex-wrap: wrap;
+    gap:10px
 }
+
+.date-of-birth__title {
+    margin: 0;
+    padding: 10px 0 10px;
+    color: rgba(0, 0, 0, 0.66);
+    font-weight: 500;
+}
+
 select {
     display: flex;
     flex-direction: row;

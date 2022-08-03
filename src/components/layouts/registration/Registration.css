@@ -1,11 +1,13 @@
-.registration_container {
+.registration__container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 3% 3%;
+    margin: 0 auto;
+    max-width: 500px;
+    width: 100%;
 }
 
-.registration_logo {
+.registration__logo {
     width: 300px;
     height: 100px;
 }
@@ -13,7 +15,7 @@
 .registration {
 display:flex;
 flex-direction: column;
-width: 40%;
+
 background-color:white;
 padding: 5px 5px;
 
@@ -22,24 +24,19 @@ border-radius: 3px;
 box-shadow: 7px 5px 10px 5px rgb(218, 215, 215); 
 margin-bottom: 10px;
 }
-@media(max-width: 700px) {
-    .registration {
-      width: auto;
-    }
-}
-.registration_article {
+.registration__article {
     display: flex;
     flex-direction: column;
     align-items: center;
     
 }
-.registration_title {
+.registration__title {
     padding-bottom: 10px;
     margin: auto;
     font-size: 25px;
     color: rgba(0, 0, 0, 0.667);
 }
-.registration_text {
+.registration__text {
     margin: auto;
   padding-bottom: 15px;
   font-size: 14px;
@@ -61,19 +58,17 @@ margin-bottom: 10px;
     flex: 1;
 }
 
-.login_password {
-    display: flex;
-    flex-direction: column;
-}
-.date-of-birth {
-    display: flex;
-    flex-direction: row;
-}
 .sex {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap:10px;
 }
-.sex_box{
+.sex__boxes {
+    display: flex;
+
+}
+.sex__box{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -84,35 +79,42 @@ margin-bottom: 10px;
     color: rgba(0, 0, 0, 0.66);
     font-size:  15px;
     margin-bottom: 7px;
+    flex: 1;
 }
-.agreement_text {
-    display: flex;
-    flex-direction: column;
-    font-size: 9px;
-    color: rgba(0, 0, 0, 0.507);
-}
-.other_information {
-    color: rgba(0, 0, 0, 0.507);
-    font-size: 9px;
-}
-.authorization-page_link {
-    align-self: center;
-    text-decoration: none;
-    padding-bottom: 20px;
-    font-size: 18px;
-    font-weight: 600;
-    color:rgba(60, 117, 240, 0.842);
-
-}
-.day-of-birth_title {
-    margin: 0;
-    padding-bottom: 10px;
-    color:rgba(0, 0, 0, 0.66);
-    font-weight: 500;
-}
-.sex_title {
+.sex__title {
     margin: 0;
     padding: 10px 0 10px;
     color: rgba(0, 0, 0, 0.66);
     font-weight: 500;
 }
+#woman, #man, #other {
+    min-width: 0px;
+    height: auto;
+    flex: 1;
+}
+.agreement__text {
+    display: flex;
+    flex-direction: column;
+    font-size: 9px;
+    color: rgba(0, 0, 0, 0.507);
+}
+.agreement__artircle{
+    padding-bottom: 10px;
+}
+
+.other_information {
+    color: rgba(0, 0, 0, 0.507);
+    font-size: 9px;
+    
+}
+
+.registration-page__link {
+    align-self: center;
+    text-decoration: none;
+    padding: 20px 0;
+    font-size: 18px;
+    font-weight: 600;
+    color:rgba(60, 117, 240, 0.842);
+
+}
+

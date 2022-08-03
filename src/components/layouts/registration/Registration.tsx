@@ -24,27 +24,36 @@ const data = {
     REGISTRATION: {
       HEADER: {
         TITLE: 'Создать аккаунт',
-        SUB_TITLE: 'Быстро и легко'
+        SUB_TITLE: 'Быстро и легко',
+        SEX_TITLE: 'Пол',
+        REGISTRATION:'Регистрация',
+        QUESTION: 'У вас уже есть аккаунт?'
       },
       OTHER_INFORMATION_TEXT: "Люди,которые пользуются нашим сервисом, могли загрузить вашу контактную информацию на Facebook.",
+      AGREEMENT_TEXT: " Нажимая кнопку Регистрация, вы принимаете Условия, Политику использования данных и Политику в отношении файлов cookie. Вы можете получать от нас SMS-уведомления, отказаться от которых можно в любой момент.",
       LINK_MORE: 'Подробнее',
       INPUTS_PLACEHOLDER: {
-        NAME: 'Имя'
+        NAME: 'Имя',
+        SURNAME: 'Фамилия',
+        SEX: {
+          WOMAN: 'Женщина',
+          MAN: 'Мужчина',
+          OTHER: 'Другое'
+
+        }
       }
     }
   }
 }
 
 const Registration: React.FunctionComponent<RegistrationProps> = () => {
-  const agreementText =
-    " Нажимая кнопку Регистрация, вы принимаете Условия, Политику использования данных и Политику в отношении файлов cookie. Вы можете получать от нас SMS-уведомления, отказаться от которых можно в любой момент.";
   return (
-    <div className="registration_container">
-      <Logo className="registration_logo"></Logo>
+    <div className="registration__container">
+      <Logo className="registration__logo"></Logo>
       <section className="registration">
-        <header className="registration_article">
-          <h1 className="registration_title">{data.PAGES.REGISTRATION.HEADER.TITLE}</h1>
-          <h2 className="registration_text">{data.PAGES.REGISTRATION.HEADER.SUB_TITLE}</h2>
+        <header className="registration__article">
+          <h1 className="registration__title">{data.PAGES.REGISTRATION.HEADER.TITLE}</h1>
+          <h2 className="registration__text">{data.PAGES.REGISTRATION.HEADER.SUB_TITLE}</h2>
         </header>
         <div className="registration__full-name">
           <Input
@@ -71,11 +80,12 @@ const Registration: React.FunctionComponent<RegistrationProps> = () => {
         <ContainerDateOfBirth></ContainerDateOfBirth>
 
 
-        <h5 className="sex_title">Пол</h5>
+        
         <div className="sex">
-
-          <div className="sex_box woman_box">
-            <label htmlFor="woman">Женщина</label>
+        <h5 className="sex__title">{data.PAGES.REGISTRATION.HEADER.SEX_TITLE}</h5>
+        <div className="sex__boxes">
+          <div className="sex__box woman-box">
+            <label htmlFor="woman">{data.PAGES.REGISTRATION.INPUTS_PLACEHOLDER.SEX.WOMAN}</label>
             <Input
               type="radio"
               id="woman"
@@ -83,18 +93,19 @@ const Registration: React.FunctionComponent<RegistrationProps> = () => {
               className="woman"
             ></Input>
           </div>
-          <div className="sex_box man_box">
-            <label htmlFor="man">Мужчина</label>
+          <div className="sex__box man-box">
+            <label htmlFor="man">{data.PAGES.REGISTRATION.INPUTS_PLACEHOLDER.SEX.MAN}</label>
             <Input type="radio" id="man" value="man" className="man"></Input>
           </div>
-          <div className="sex_box other_box">
-            <label htmlFor="other">Другое</label>
+          <div className="sex__box other-box">
+            <label htmlFor="other">{data.PAGES.REGISTRATION.INPUTS_PLACEHOLDER.SEX.OTHER}</label>
             <Input
               type="radio"
               id="other"
               value="other"
               className="other"
             ></Input>
+          </div>
           </div>
         </div>
         <div className="other_information">
@@ -105,13 +116,13 @@ const Registration: React.FunctionComponent<RegistrationProps> = () => {
 
           {/* <h3>Подробнее</h3> */}
         </div>
-        <div className="agreement_text">
-          <h3 className="agreement_artircle">{agreementText}</h3>
-          <Button color="green" className="registration_button">
-            Регистрация
+        <div className="agreement__text">
+          <h3 className="agreement__artircle">{data.PAGES.REGISTRATION.AGREEMENT_TEXT}</h3>
+          <Button color="green" className="registration__button">
+            {data.PAGES.REGISTRATION.HEADER.REGISTRATION}
           </Button>
-          <Link className="authorization-page_link" to="/">
-            У вас уже есть аккаунт?
+          <Link className="registration-page__link" to="/">
+           {data.PAGES.REGISTRATION.HEADER.QUESTION}
           </Link>
         </div>
       </section>

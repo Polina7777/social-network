@@ -8,9 +8,9 @@
     font-size: 14px;
     font-stretch: ultra-expanded;
     padding: 0px 10px;
-    min-width: 160px;
+    /* min-width: 160px; */
 }
 
-.select-input-container {
+.select-input__container {
     flex: 1;
 }

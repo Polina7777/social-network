@@ -12,7 +12,12 @@ export interface HeaderProps {
     type?: string;
 
 }
-
+const data = {
+    TITLES: {
+        LOGIN:'Вход',
+        FORGETPASSWORD:'Забыли пароль?'
+    }
+}
 const Header: React.FunctionComponent<HeaderProps> | any = () => {
     let location = useLocation();
     if (location.pathname !== '/accountsearch') {
@@ -24,9 +29,9 @@ const Header: React.FunctionComponent<HeaderProps> | any = () => {
             <div className="header_authorization-part">
                 <Input className="header_authorization authorization_login" inputClassName="header-input" placeholder='Электронный адрес или номер телефона'></Input>
                 <Input className="header_authorization authorization_password" inputClassName="header-input" placeholder='Пароль'></Input>
-                <Button color='blue' className="header_button">Вход</Button>
+                <Button color='blue' className="header__button">{data.TITLES.LOGIN}</Button>
 
-                <Link to='accountsearch' className="forget-password_header">Забыли пароль?</Link>
+                <Link to='accountsearch' className="forget-password_header">{data.TITLES.FORGETPASSWORD}</Link>
             </div>
 
         </div>

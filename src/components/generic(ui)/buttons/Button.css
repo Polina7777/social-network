@@ -5,8 +5,8 @@
     border-radius: 5px;
     width: 70%;
     padding: 9px 5px;
-    margin: 17px 0 ;
-    font-size: 95%;
+   
+    font-size: 12px;
   
 }
 .blue {
@@ -18,20 +18,8 @@
    text-align: center;
    
 }
-.extra-small {
-    width: 4%;
-    padding: 1px 0px;
-}
-.small {
-    width: 10%;
-}
-.medium {
-    width: 50%;
-    padding: 7px 0;
-}
-.big {
-    width: 100%;
-}
+
+
 .light {
     align-items: center;
     padding: 8px 15px;
@@ -45,37 +33,30 @@
     
 }
 
-.header_button-blue {
+.header__button-blue {
     background-color:rgb(60, 99, 240);
     color: white;
     border: 2px solid rgb(60, 99, 240);
     border-radius: 5px;
     width: fit-content;
     border-radius: 5px;
-    padding: 6px 8px;
+    padding: 4px 8px;
     height: 50%;
     margin: 0px 5px;
    
 }
 
-/* .account-search-button {
-    width: 100%;
-    font-weight: 600;
-    text-align: center;
-    padding: 7px;
-    
-} */
-.account-search_button-blue {
+.account-search__button-blue {
     font-size: 16px;
     padding: 8px 19px;
     font-weight: 500;
 }
-.registration_button-green {
+.registration__button-green {
     align-self: center;
     font-size: 19px;
     font-weight: 600;
 }
-.footer_button-light{
+.footer__button-light{
     padding: 0 3px;
     margin: auto;
     margin-left: 10px;

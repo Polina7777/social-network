@@ -1,4 +1,4 @@
-import { ReactNode, SetStateAction, useState } from "react";
+import { useState } from "react";
 import "./ContainerDateOfBirth.css";
 import SelectInput, { SelectOption } from "./Select-input";
 
@@ -13,7 +13,13 @@ export interface ContainerDateOfBirthProps {
 }
 
 const data = {
-  month: ['январь', 'февраль', 'март', 'апрель', 'май', 'июнь', 'июль', 'август', 'сентябрь', 'октябрь', 'ноябрь', 'декабрь']
+  TITLE:'Дата рождения',
+  DAYS: 31,
+  MONTH: ['январь', 'февраль', 'март', 'апрель', 'май', 'июнь', 'июль', 'август', 'сентябрь', 'октябрь', 'ноябрь', 'декабрь'],
+  YEAR:{
+    MAX: 2022,
+    MIN: 1960
+  }
 }
 
 const ContainerDateOfBirth: React.FunctionComponent<
@@ -30,38 +36,38 @@ const ContainerDateOfBirth: React.FunctionComponent<
   }
 
   const getDayOptions = (): SelectOption[] => {
-    return new Array(31).fill(0).map((item, index) => ({
+    return new Array(data.DAYS).fill(0).map((item, index) => ({
       value: index + 1,
       text: index + 1
     }))
   }
 
-  const getMonthOptions = (): ReactNode[] => data.month.map((item, index) => <option key={index} value={index + 1}>{item}</option>)
-  const getYearOptions = (): ReactNode[] => {
-    const max = new Date().getFullYear()
-    const min = max - 20
-    const dateOptionsArray = []
-    for (let i = max; i >= min; i--) {
-      dateOptionsArray.push(<option key={i} value={i}>{i}</option>)
-    }
+  const getMonthOptions = (): SelectOption[] => {
+    return data.MONTH.map((item, index) => ({
+      value: index + 1,
+      text: item
+    }))
+  }
 
+  const getYearOptions = (): SelectOption[] => {
+
+    const dateOptionsArray = []
+    for (let i = data.YEAR.MAX; i >= data.YEAR.MIN; i--) {
+      dateOptionsArray.push({
+         value: i,
+         text: i })
+    }
     return dateOptionsArray
   }
+
   return (
-    <div className="date-of-birth_container">
-      <p className="day-of-birth_title">Дата рождения</p>
-      <div></div>
+    <div className="date-of-birth__container">
+      <p className="date-of-birth__title">{data.TITLE}</p>
+      <div className="day-of-birth__container">
         <SelectInput name="day" id="day-select" options={getDayOptions()} />
-      <div className="month-of-birth_container">
-        <select name="month" id="month-select" value={month} onChange={(event) => setMonth(event.target.value)}>
-          {getMonthOptions()}
-        </select>
-      </div>
-      <div className="year-of-birth_container">
-        <select name="year" id="year-select" value={year} onChange={(event) => checkValidYears(event.target.value)}>
-          {getYearOptions()}
-        </select>
-      </div>
+        <SelectInput name="month" id="month-select" options={getMonthOptions()} />
+        <SelectInput name="year" id="year-select" options={getYearOptions()} />
+        </div>
     </div>
   );
 };

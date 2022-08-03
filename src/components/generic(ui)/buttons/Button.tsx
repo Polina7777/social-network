@@ -10,28 +10,24 @@ export interface ButtonProps {
    props?: any;
    children?: React.ReactNode;
    color?:'primary'|'light'| 'blue'| 'green';
-   handlerOnClick?: (event:React.MouseEvent<HTMLButtonElement>) => void;
-   focusOnInputClick?:()=>void;
-   inputChangeData?:(event:React.MouseEvent<HTMLButtonElement>) => void;
+   buttonEventHandler?:() => void;
    disabled?: boolean;
 }
 
 
 
 const Button: React.FunctionComponent <ButtonProps> = ({
-   focusOnInputClick,
+
    type,
+   buttonEventHandler,
   className,
-  inputChangeData,
-  buttonClassName,
-   handlerOnClick,
    children,
    color,
    disabled,
 }) => {
    return(
     <button className = {`${color}  ${className}-${color}`} 
-     onClick= {focusOnInputClick} color = {color} disabled = {disabled}>
+     onClick= {buttonEventHandler} color = {color} disabled = {disabled}>
       {children}
 
     </button>

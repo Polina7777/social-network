@@ -1,5 +1,4 @@
 .account-search {
-  
     display:flex;
     flex-direction: column;
     width: 470px;
@@ -9,18 +8,20 @@
    border: 2px solid rgba(236, 234, 234, 0.361);
    border-radius: 3px;
    box-shadow: 7px 5px 10px 5px rgb(218, 215, 215); 
+   margin: 40px auto;
+   
 
-
-    
 }
-.account-search_title {
+
+
+.account-search__title {
     border-bottom: 2px solid rgba(160, 159, 159, 0.208);
     border-radius: 3px; 
     padding-bottom: 15px;
     font-size: 20px;
 }
 
-.account-search_box {
+.account-search__box {
     width: 97%;
    font-size: 17px;
    margin-bottom: 20px;
@@ -30,7 +31,7 @@
     border-radius: 3px;
 }
 
-.account-search_buttons {
+.account-search__buttons {
     display: flex;
     flex-direction: row;
     align-content: baseline;
@@ -41,20 +42,20 @@
 }
 
 
-.account-search_text {
+.account-search__text {
     margin: 0;
     font-weight: 400;
     font-size: 19px;
     line-break: anywhere;
 }
-@media(max-width:500px) {
-    .account-search_text{
+/* @media(max-width:500px) {
+    .account-search__text{
         font-size: 13px;
     }
-    .account-search_box{
+    .account-search__box{
         font-size: 11px;
     }
-    .account-search_buttons{
+    .account-search__buttons{
         align-self: center;
     }
-}
+} */
