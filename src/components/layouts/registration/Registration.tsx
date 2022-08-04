@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import Button from "../../generic(ui)/buttons/Button";
 import ContainerDateOfBirth from "../../generic(ui)/checkbox/ContainerDateOfBirth";
@@ -47,6 +48,28 @@ const data = {
 }
 
 const Registration: React.FunctionComponent<RegistrationProps> = () => {
+  const [password,setPassword] = useState('');
+  const [login, setLogin] = useState('');
+  const [name,setName] = useState('');
+  const [surname,setSurname] = useState('');
+  const [man,setMan] = useState('');
+  const [woman,setWoman] = useState('');
+  const [other,setOther] = useState('');
+  const [day,setDay] = useState('');
+  const [month,setMonth] = useState('');
+  const [year,setYear] = useState('');
+
+ const buttonEvent = () => {
+  const body = { 
+    FULLNAME:{
+      name:name,
+      surname:surname
+    },
+     SEX: {woman,man,other},
+
+    password,login}
+   console.log(body)
+ }
   return (
     <div className="registration__container">
       <Logo className="registration__logo"></Logo>
@@ -56,30 +79,27 @@ const Registration: React.FunctionComponent<RegistrationProps> = () => {
           <h2 className="registration__text">{data.PAGES.REGISTRATION.HEADER.SUB_TITLE}</h2>
         </header>
         <div className="registration__full-name">
-          <Input
+          <Input setValueHandler={setName}
             className="registration__input"
             placeholder="Имя"
           ></Input>
-          <Input
+          <Input setValueHandler={setSurname}
             className="registration__input"
             placeholder="Фамилия"
           ></Input>
         </div>
         <div className="registration__password-and-email">
-          <Input
+          <Input setValueHandler={setLogin}
             className="registration__input"
             placeholder="Электронный адрес или номер телефона"
           ></Input>
-          <Input
+          <Input  setValueHandler={setPassword}
             className="registration__input"
             placeholder="Пароль"
           ></Input>
         </div>
 
-
         <ContainerDateOfBirth></ContainerDateOfBirth>
-
-
         
         <div className="sex">
         <h5 className="sex__title">{data.PAGES.REGISTRATION.HEADER.SEX_TITLE}</h5>
@@ -87,6 +107,7 @@ const Registration: React.FunctionComponent<RegistrationProps> = () => {
           <div className="sex__box woman-box">
             <label htmlFor="woman">{data.PAGES.REGISTRATION.INPUTS_PLACEHOLDER.SEX.WOMAN}</label>
             <Input
+            setValueHandler={setWoman}
               type="radio"
               id="woman"
               value="woman"
@@ -95,11 +116,12 @@ const Registration: React.FunctionComponent<RegistrationProps> = () => {
           </div>
           <div className="sex__box man-box">
             <label htmlFor="man">{data.PAGES.REGISTRATION.INPUTS_PLACEHOLDER.SEX.MAN}</label>
-            <Input type="radio" id="man" value="man" className="man"></Input>
+            <Input setValueHandler={setMan}
+            type="radio" id="man" value="man" className="man"></Input>
           </div>
           <div className="sex__box other-box">
             <label htmlFor="other">{data.PAGES.REGISTRATION.INPUTS_PLACEHOLDER.SEX.OTHER}</label>
-            <Input
+            <Input setValueHandler={setOther}
               type="radio"
               id="other"
               value="other"
@@ -118,7 +140,7 @@ const Registration: React.FunctionComponent<RegistrationProps> = () => {
         </div>
         <div className="agreement__text">
           <h3 className="agreement__artircle">{data.PAGES.REGISTRATION.AGREEMENT_TEXT}</h3>
-          <Button color="green" className="registration__button">
+          <Button color="green" buttonEventHandler={buttonEvent} className="registration__button">
             {data.PAGES.REGISTRATION.HEADER.REGISTRATION}
           </Button>
           <Link className="registration-page__link" to="/">

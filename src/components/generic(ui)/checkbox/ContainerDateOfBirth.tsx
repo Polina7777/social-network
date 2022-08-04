@@ -10,6 +10,9 @@ export interface ContainerDateOfBirthProps {
   for?: any;
   children?: any;
   label?: any;
+  value?:string;
+  setValueHandler?: (value: string) => void;
+  setDayHandler?:(value: string) => void;
 }
 
 const data = {
@@ -24,7 +27,7 @@ const data = {
 
 const ContainerDateOfBirth: React.FunctionComponent<
   ContainerDateOfBirthProps
-> = () => {
+> = (setValueHandler) => {
   const [month, setMonth] = useState('')
   const [year, setYear] = useState('')
 
