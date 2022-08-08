@@ -6,13 +6,8 @@ import Logo from "../../generic(ui)/logo/Logo";
 import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { HeaderProps } from "./Header-interface";
 
-export interface HeaderProps {
-  className?: string;
-  inputClassName?: string;
-  type?: string;
-  value?: string;
-}
 const data = {
   TITLES: {
     LOGIN: "Вход",

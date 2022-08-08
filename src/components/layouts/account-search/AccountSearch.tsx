@@ -3,13 +3,9 @@ import Button from "../../generic(ui)/buttons/Button";
 import Input from "../../generic(ui)/inputs/Input";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { AccountSearchProps } from "./AccountSearch-interface";
 
-export interface AccountSearchProps {
-    type?: string;
-    className?: string;
-    inputClassName?: string;
 
-}
   const data = {
     ACCOUNTSEARCHTEXT: "Чтобы найти свой аккаунт, введите ваш электронный адрес или номер мобильного телефона",
     ACCOUNTSEARCHTITLE:"Поиск аккаунта",

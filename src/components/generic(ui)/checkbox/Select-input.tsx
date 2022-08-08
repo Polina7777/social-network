@@ -1,32 +1,46 @@
-import { useState } from "react";
+import React, { ChangeEvent, useContext, useState } from "react";
+import { DateSelect, Dispatcher, RegistrationContext } from "../../layouts/registration/Registration";
 import './Select-input.css'
-
-export interface InputProps {
-   className?: string,
-   options: SelectOption[],
-   id?: string,
-   name?: string
- 
-}
+import { InputProps,SelectOption } from "./Select-input.interface";
 
 
-export interface SelectOption {
-   value: number,
-   text: string | number,
 
- 
-}
+const SelectInput: React.FC<InputProps> = ({ className, options,name, id,selectHandlerChange}) => {
+  //const[ contextName,setContextName ]= useContext(RegistrationContext);
 
+   const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+     
+      switch (name) {
+         case 'day' : 
+         selectHandlerChange((prevState: any) => {
+            return {...prevState,day:event.target.value}
+         })
+         break;
+         case 'month' : 
+         selectHandlerChange((prevState) => {
+            return {...prevState,month:event.target.value}
+         })
+         break;
+         case 'year' : 
+         selectHandlerChange((prevState) => {
+            return {...prevState,year:event.target.value}
+         })
+         break;
 
-const SelectInput: React.FC<InputProps> = ({ className, options, name, id}) => {
-   const [value, setValue] = useState('')
+      }
+   }
+
 
    return (
       <div className={className ?? 'select-input__container'}>
-         <select  className="select-input" name={name} id={id} value={value} onChange={(event) => setValue(event.target.value)}>
-            {options.map((item, index) => <option key={index} value={item.value}>{item.text}</option>)}
+           {contextName.name}
+         <select className="select-input"  name={name} id={id} 
+         // onChange={(event) => setValue(event.target.value)}
+         onChange={handleChange}>
+            {options.map((item, index) => <option key={index}  value={item.text}>{item.text}</option>)}
               
          </select>
+       
       </div>
    )
 }

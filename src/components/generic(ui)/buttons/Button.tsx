@@ -1,24 +1,9 @@
 
 import React from "react"
+import { ButtonProps } from "./Button-interface"
 import "./Button.css"
 
-
-export interface ButtonProps {
-   className?:string;
-   buttonClassName?:string;
-   type?:any;
-   props?: any;
-   children?: React.ReactNode;
-   color?:'primary'|'light'| 'blue'| 'green';
-   buttonEventHandler?:() => void;
-   disabled?: boolean;
-}
-
-
-
 const Button: React.FunctionComponent <ButtonProps> = ({
-
-   type,
    buttonEventHandler,
   className,
    children,

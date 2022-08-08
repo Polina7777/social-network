@@ -1,24 +1,16 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Button from "../../generic(ui)/buttons/Button";
 import ContainerDateOfBirth from "../../generic(ui)/checkbox/ContainerDateOfBirth";
-
 import Input from "../../generic(ui)/inputs/Input";
 import Logo from "../../generic(ui)/logo/Logo";
+import { DateSelect, RegistrationProps } from "./Registration-interface-types";
 import "./Registration.css";
 
+const defaultRegistrationValue = {login:''}
+export const RegistrationContext = React.createContext(defaultRegistrationValue);
 
-export interface RegistrationProps {
-  value?: string;
-  type?: string;
-  className?: string;
-  color?: string;
-  buttonClassName?: string;
-  inputClassName?: string;
-  placeholder?: string;
-  handlerOnClick?: () => void;
-  handlerOnChange?: () => void;
-}
+
 
 const data = {
   PAGES: {
@@ -52,25 +44,23 @@ const Registration: React.FunctionComponent<RegistrationProps> = () => {
   const [login, setLogin] = useState('');
   const [name,setName] = useState('');
   const [surname,setSurname] = useState('');
-  const [man,setMan] = useState('');
-  const [woman,setWoman] = useState('');
-  const [other,setOther] = useState('');
-  const [day,setDay] = useState('');
-  const [month,setMonth] = useState('');
-  const [year,setYear] = useState('');
+  const [sex,setSex] = useState('');
+  const [dateSelect,setDateSelect] = useState<DateSelect>({day:'',month:'',year:''})
+
+
+
 
  const buttonEvent = () => {
   const body = { 
-    FULLNAME:{
-      name:name,
-      surname:surname
-    },
-     SEX: {woman,man,other},
-
-    password,login}
-   console.log(body)
+    name,surname,dateSelect,sex,login,password
+    
+  }
+  console.log(body)
  }
+  
+
   return (
+    <RegistrationContext.Provider value={ defaultRegistrationValue }>
     <div className="registration__container">
       <Logo className="registration__logo"></Logo>
       <section className="registration">
@@ -99,7 +89,7 @@ const Registration: React.FunctionComponent<RegistrationProps> = () => {
           ></Input>
         </div>
 
-        <ContainerDateOfBirth></ContainerDateOfBirth>
+        <ContainerDateOfBirth dateSelect ={setDateSelect }></ContainerDateOfBirth>
         
         <div className="sex">
         <h5 className="sex__title">{data.PAGES.REGISTRATION.HEADER.SEX_TITLE}</h5>
@@ -107,8 +97,9 @@ const Registration: React.FunctionComponent<RegistrationProps> = () => {
           <div className="sex__box woman-box">
             <label htmlFor="woman">{data.PAGES.REGISTRATION.INPUTS_PLACEHOLDER.SEX.WOMAN}</label>
             <Input
-            setValueHandler={setWoman}
+            setValueHandler={setSex}
               type="radio"
+              name= 'sex'
               id="woman"
               value="woman"
               className="woman"
@@ -116,13 +107,14 @@ const Registration: React.FunctionComponent<RegistrationProps> = () => {
           </div>
           <div className="sex__box man-box">
             <label htmlFor="man">{data.PAGES.REGISTRATION.INPUTS_PLACEHOLDER.SEX.MAN}</label>
-            <Input setValueHandler={setMan}
-            type="radio" id="man" value="man" className="man"></Input>
+            <Input setValueHandler={setSex}
+            type="radio"   name='sex' id="man" value="man" className="man"></Input>
           </div>
           <div className="sex__box other-box">
             <label htmlFor="other">{data.PAGES.REGISTRATION.INPUTS_PLACEHOLDER.SEX.OTHER}</label>
-            <Input setValueHandler={setOther}
+            <Input setValueHandler={setSex}
               type="radio"
+              name= 'sex'
               id="other"
               value="other"
               className="other"
@@ -135,8 +127,6 @@ const Registration: React.FunctionComponent<RegistrationProps> = () => {
             {data.PAGES.REGISTRATION.OTHER_INFORMATION_TEXT + ' '}
             <Link to={"#"}>{data.PAGES.REGISTRATION.LINK_MORE}</Link>
           </h3>
-
-          {/* <h3>Подробнее</h3> */}
         </div>
         <div className="agreement__text">
           <h3 className="agreement__artircle">{data.PAGES.REGISTRATION.AGREEMENT_TEXT}</h3>
@@ -149,6 +139,7 @@ const Registration: React.FunctionComponent<RegistrationProps> = () => {
         </div>
       </section>
     </div>
+    </RegistrationContext.Provider >
   );
 };
 
