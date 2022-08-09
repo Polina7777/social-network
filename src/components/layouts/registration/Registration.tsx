@@ -6,12 +6,7 @@ import Input from "../../generic(ui)/inputs/Input";
 import Logo from "../../generic(ui)/logo/Logo";
 import { DateSelect, RegistrationProps } from "./Registration-interface-types";
 import "./Registration.css";
-
-const defaultRegistrationValue = {login:''}
-export const RegistrationContext = React.createContext(defaultRegistrationValue);
-
-
-
+export const registrationContext = React.createContext({})
 const data = {
   PAGES: {
     REGISTRATION: {
@@ -39,16 +34,15 @@ const data = {
   }
 }
 
+
+
 const Registration: React.FunctionComponent<RegistrationProps> = () => {
   const [password,setPassword] = useState('');
   const [login, setLogin] = useState('');
   const [name,setName] = useState('');
   const [surname,setSurname] = useState('');
   const [sex,setSex] = useState('');
-  const [dateSelect,setDateSelect] = useState<DateSelect>({day:'',month:'',year:''})
-
-
-
+  const [dateSelect,setDateSelect] = useState<DateSelect>({day:'',month:'',year:''});
 
  const buttonEvent = () => {
   const body = { 
@@ -57,10 +51,10 @@ const Registration: React.FunctionComponent<RegistrationProps> = () => {
   }
   console.log(body)
  }
-  
+
 
   return (
-    <RegistrationContext.Provider value={ defaultRegistrationValue }>
+   <registrationContext.Provider value={name}>
     <div className="registration__container">
       <Logo className="registration__logo"></Logo>
       <section className="registration">
@@ -139,8 +133,9 @@ const Registration: React.FunctionComponent<RegistrationProps> = () => {
         </div>
       </section>
     </div>
-    </RegistrationContext.Provider >
+    </registrationContext.Provider>
   );
 };
 
-export default Registration;
+
+export default Registration

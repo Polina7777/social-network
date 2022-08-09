@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { ContainerDateOfBirthProps } from "./ContainerDateOfBirth-interface";
 import "./ContainerDateOfBirth.css";
 import SelectInput from "./Select-input";
-import { SelectOption } from "./Select-input.interface";
+import { SelectOption } from "./Select-input-interface";
 
 const data = {
   TITLE:'Дата рождения',

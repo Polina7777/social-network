@@ -5,12 +5,15 @@ import Footer from './components/layouts/footer/Footer';
 import Header from './components/layouts/header/Header';
 import Main from './components/layouts/main/Main';
 
+;
+
 
 
 
 const App: React.FunctionComponent = () => {
 
   return (
+
     <BrowserRouter>
     <div className="App">
       <Header/>
@@ -18,6 +21,7 @@ const App: React.FunctionComponent = () => {
     <Footer/>
     </div>
     </BrowserRouter>
+
   );
 
 }

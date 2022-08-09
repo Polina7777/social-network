@@ -1,12 +1,9 @@
-import React, { ChangeEvent, useContext, useState } from "react";
-import { DateSelect, Dispatcher, RegistrationContext } from "../../layouts/registration/Registration";
+import React, {useContext,useState,createContext} from "react";
 import './Select-input.css'
-import { InputProps,SelectOption } from "./Select-input.interface";
+import { InputProps} from "./Select-input-interface";
+import { registrationContext } from "../../layouts/registration/Registration";
 
-
-
-const SelectInput: React.FC<InputProps> = ({ className, options,name, id,selectHandlerChange}) => {
-  //const[ contextName,setContextName ]= useContext(RegistrationContext);
+const SelectInput: React.FC<InputProps> = ({className, options,name, id,selectHandlerChange}) => {
 
    const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
      
@@ -29,19 +26,22 @@ const SelectInput: React.FC<InputProps> = ({ className, options,name, id,selectH
 
       }
    }
-
-
+   const contextName = useContext(registrationContext)
    return (
+     
       <div className={className ?? 'select-input__container'}>
-           {contextName.name}
+       <> {contextName}</>
          <select className="select-input"  name={name} id={id} 
          // onChange={(event) => setValue(event.target.value)}
          onChange={handleChange}>
             {options.map((item, index) => <option key={index}  value={item.text}>{item.text}</option>)}
-              
+      
          </select>
        
       </div>
+      
    )
 }
 export default SelectInput
+
+
