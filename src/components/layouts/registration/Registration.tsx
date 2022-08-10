@@ -1,9 +1,11 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import Button from "../../generic(ui)/buttons/Button";
-import ContainerDateOfBirth from "../../generic(ui)/checkbox/ContainerDateOfBirth";
+import ContainerDateOfBirth from "../../generic(ui)/checkbox/container-date-of-birth/ContainerDateOfBirth";
 import Input from "../../generic(ui)/inputs/Input";
 import Logo from "../../generic(ui)/logo/Logo";
+import i18n from "../../i18n/i18n";
 import { DateSelect, RegistrationProps } from "./Registration-interface-types";
 import "./Registration.css";
 export const registrationContext = React.createContext({})
@@ -37,6 +39,7 @@ const data = {
 
 
 const Registration: React.FunctionComponent<RegistrationProps> = () => {
+  const {t} = useTranslation('translation')
   const [password,setPassword] = useState('');
   const [login, setLogin] = useState('');
   const [name,setName] = useState('');
@@ -65,21 +68,21 @@ const Registration: React.FunctionComponent<RegistrationProps> = () => {
         <div className="registration__full-name">
           <Input setValueHandler={setName}
             className="registration__input"
-            placeholder="Имя"
+            placeholder={t("description.name")}
           ></Input>
           <Input setValueHandler={setSurname}
             className="registration__input"
-            placeholder="Фамилия"
+            placeholder={t("description.surname")}
           ></Input>
         </div>
         <div className="registration__password-and-email">
           <Input setValueHandler={setLogin}
             className="registration__input"
-            placeholder="Электронный адрес или номер телефона"
-          ></Input>
+            placeholder={t('description.loginPlaceholder')}>
+        </Input>
           <Input  setValueHandler={setPassword}
             className="registration__input"
-            placeholder="Пароль"
+            placeholder={t('description.passwordPlaceholder')}
           ></Input>
         </div>
 
@@ -125,11 +128,17 @@ const Registration: React.FunctionComponent<RegistrationProps> = () => {
         <div className="agreement__text">
           <h3 className="agreement__artircle">{data.PAGES.REGISTRATION.AGREEMENT_TEXT}</h3>
           <Button color="green" buttonEventHandler={buttonEvent} className="registration__button">
-            {data.PAGES.REGISTRATION.HEADER.REGISTRATION}
+            {t('description.registration')}
           </Button>
           <Link className="registration-page__link" to="/">
-           {data.PAGES.REGISTRATION.HEADER.QUESTION}
+           {t('description.question')}
           </Link>
+          <Button color="green" className="change-language_button" buttonEventHandler={()=> i18n.changeLanguage('en')}>
+        EN
+        </Button>
+        <Button color="green" className="change-language_button" buttonEventHandler={()=> i18n.changeLanguage('ru')}>
+          RU
+        </Button>
         </div>
       </section>
     </div>

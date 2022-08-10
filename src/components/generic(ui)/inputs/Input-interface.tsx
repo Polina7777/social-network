@@ -5,7 +5,7 @@ export interface InputProps {
     className?: string,
     type?: string;
     children?:React.ReactNode;
-    placeholder?:string;
+    placeholder?:any;
     inputClassName?:string
     setValueHandler: (value: string) => void;
     

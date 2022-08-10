@@ -1,4 +1,4 @@
-import { DateSelect, Dispatcher } from "../../layouts/registration/Registration-interface-types";
+import { DateSelect, Dispatcher } from "../../../layouts/registration/Registration-interface-types";
 
 export interface ContainerDateOfBirthProps {
     type?: string;

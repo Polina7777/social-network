@@ -1,6 +1,7 @@
 export interface ButtonProps {
     className?:string;
     buttonClassName?:string;
+    key?:string
     type?:any;
     props?: any;
     children?: React.ReactNode;

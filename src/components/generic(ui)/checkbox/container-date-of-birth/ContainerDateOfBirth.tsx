@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { ContainerDateOfBirthProps } from "./ContainerDateOfBirth-interface";
 import "./ContainerDateOfBirth.css";
-import SelectInput from "./Select-input";
-import { SelectOption } from "./Select-input-interface";
+import SelectInput from "../select-input/Select-input";
+import { SelectOption } from "../select-input/Select-input-interface";
 
 const data = {
   TITLE:'Дата рождения',

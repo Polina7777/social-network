@@ -1,7 +1,7 @@
 import React, {useContext,useState,createContext} from "react";
 import './Select-input.css'
 import { InputProps} from "./Select-input-interface";
-import { registrationContext } from "../../layouts/registration/Registration";
+import { registrationContext } from "../../../layouts/registration/Registration";
 
 const SelectInput: React.FC<InputProps> = ({className, options,name, id,selectHandlerChange}) => {
 

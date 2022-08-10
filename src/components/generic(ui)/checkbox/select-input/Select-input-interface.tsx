@@ -1,7 +1,7 @@
 
 
 import React from "react";
-import { Dispatcher,DateSelect} from "../../layouts/registration/Registration-interface-types";
+import { Dispatcher,DateSelect} from "../../../layouts/registration/Registration-interface-types";
 
 export interface InputProps {
    children?:React.ReactNode

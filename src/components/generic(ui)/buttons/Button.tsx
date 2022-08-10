@@ -5,6 +5,7 @@ import "./Button.css"
 
 const Button: React.FunctionComponent <ButtonProps> = ({
    buttonEventHandler,
+   key,
   className,
    children,
    color,
@@ -12,7 +13,7 @@ const Button: React.FunctionComponent <ButtonProps> = ({
 }) => {
    return(
     <button className = {`${color}  ${className}-${color}`} 
-     onClick= {buttonEventHandler} color = {color} disabled = {disabled}>
+     onClick= {buttonEventHandler} key={key} color = {color} disabled = {disabled}>
       {children}
 
     </button>
