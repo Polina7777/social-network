@@ -39,7 +39,7 @@ const data = {
 
 
 const Registration: React.FunctionComponent<RegistrationProps> = () => {
-  const {t} = useTranslation('translation')
+  const {t} = useTranslation('translation');
   const [password,setPassword] = useState('');
   const [login, setLogin] = useState('');
   const [name,setName] = useState('');
@@ -62,37 +62,37 @@ const Registration: React.FunctionComponent<RegistrationProps> = () => {
       <Logo className="registration__logo"></Logo>
       <section className="registration">
         <header className="registration__article">
-          <h1 className="registration__title">{data.PAGES.REGISTRATION.HEADER.TITLE}</h1>
-          <h2 className="registration__text">{data.PAGES.REGISTRATION.HEADER.SUB_TITLE}</h2>
+          <h1 className="registration__title">{t('description.registration.createNewAccount')}</h1>
+          <h2 className="registration__text">{t('description.registration.subTitleRegistration')}</h2>
         </header>
         <div className="registration__full-name">
           <Input setValueHandler={setName}
             className="registration__input"
-            placeholder={t("description.name")}
+            placeholder={t("description.registration.name")}
           ></Input>
           <Input setValueHandler={setSurname}
             className="registration__input"
-            placeholder={t("description.surname")}
+            placeholder={t("description.registration.surname")}
           ></Input>
         </div>
         <div className="registration__password-and-email">
           <Input setValueHandler={setLogin}
             className="registration__input"
-            placeholder={t('description.loginPlaceholder')}>
+            placeholder={t('description.authorization.loginPlaceholder')}>
         </Input>
           <Input  setValueHandler={setPassword}
             className="registration__input"
-            placeholder={t('description.passwordPlaceholder')}
+            placeholder={t('description.authorization.passwordPlaceholder')}
           ></Input>
         </div>
 
         <ContainerDateOfBirth dateSelect ={setDateSelect }></ContainerDateOfBirth>
         
         <div className="sex">
-        <h5 className="sex__title">{data.PAGES.REGISTRATION.HEADER.SEX_TITLE}</h5>
+        <h5 className="sex__title">{t('description.registration.sex.sex')}</h5>
         <div className="sex__boxes">
           <div className="sex__box woman-box">
-            <label htmlFor="woman">{data.PAGES.REGISTRATION.INPUTS_PLACEHOLDER.SEX.WOMAN}</label>
+            <label htmlFor="woman">{t('description.registration.sex.woman')}</label>
             <Input
             setValueHandler={setSex}
               type="radio"
@@ -103,12 +103,12 @@ const Registration: React.FunctionComponent<RegistrationProps> = () => {
             ></Input>
           </div>
           <div className="sex__box man-box">
-            <label htmlFor="man">{data.PAGES.REGISTRATION.INPUTS_PLACEHOLDER.SEX.MAN}</label>
+            <label htmlFor="man">{t('description.registration.sex.man')}</label>
             <Input setValueHandler={setSex}
             type="radio"   name='sex' id="man" value="man" className="man"></Input>
           </div>
           <div className="sex__box other-box">
-            <label htmlFor="other">{data.PAGES.REGISTRATION.INPUTS_PLACEHOLDER.SEX.OTHER}</label>
+            <label htmlFor="other">{t('description.registration.sex.other')}</label>
             <Input setValueHandler={setSex}
               type="radio"
               name= 'sex'
@@ -121,23 +121,29 @@ const Registration: React.FunctionComponent<RegistrationProps> = () => {
         </div>
         <div className="other_information">
           <h3 className="other_information-text">
-            {data.PAGES.REGISTRATION.OTHER_INFORMATION_TEXT + ' '}
-            <Link to={"#"}>{data.PAGES.REGISTRATION.LINK_MORE}</Link>
+          {t('description.registration.otherInformationText')}
+            <Link to={"#"}>{t('description.registration.learnMore')}</Link>
           </h3>
         </div>
         <div className="agreement__text">
-          <h3 className="agreement__artircle">{data.PAGES.REGISTRATION.AGREEMENT_TEXT}</h3>
+          <h3 className="agreement__artircle">{t('description.registration.agreementText')}</h3>
           <Button color="green" buttonEventHandler={buttonEvent} className="registration__button">
-            {t('description.registration')}
+            {t('description.registration.registration')}
           </Button>
           <Link className="registration-page__link" to="/">
-           {t('description.question')}
+           {t('description.registration.question')}
           </Link>
           <Button color="green" className="change-language_button" buttonEventHandler={()=> i18n.changeLanguage('en')}>
         EN
         </Button>
         <Button color="green" className="change-language_button" buttonEventHandler={()=> i18n.changeLanguage('ru')}>
           RU
+        </Button>
+        <Button color="green" className="change-language_button" buttonEventHandler={()=> i18n.changeLanguage('de')}>
+        DE
+        </Button>
+        <Button color="green" className="change-language_button" buttonEventHandler={()=> i18n.changeLanguage('es')}>
+          ES
         </Button>
         </div>
       </section>

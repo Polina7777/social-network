@@ -1,16 +1,16 @@
-import Input from "../../generic(ui)/inputs/Input";
-import Button from "../../generic(ui)/buttons/Button";
+import Input from "../../../generic(ui)/inputs/Input";
+import Button from "../../../generic(ui)/buttons/Button";
 
 import "./Header.css";
-import Logo from "../../generic(ui)/logo/Logo";
+import Logo from "../../../generic(ui)/logo/Logo";
 import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import { HeaderProps } from "./Header-interface";
+import { HeaderMyPageProps } from "./Header-my-page-interface";
 import { useTranslation } from "react-i18next";
 
 
-const Header: React.FunctionComponent<HeaderProps> | any = () => {
+const Header: React.FunctionComponent<HeaderMyPageProps> | any = () => {
   const {t} = useTranslation('translation')
 
   const [password, setPassword] = useState("");

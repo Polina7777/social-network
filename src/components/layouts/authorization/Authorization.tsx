@@ -7,24 +7,12 @@ import { AuthorizationProps } from "./Authorization-interface";
 import {useTranslation,Trans, Translation} from 'react-i18next';
 import i18n from "../../i18n/i18n";
 
+;
 
-const data = {
-  TITLES: {
-    LOGIN: "Вход",
-    FORGETPASSWORD: "Забыли пароль?",
-    CREATENEWACCOUNT: "Создать новый аккаунт",
-  },
-};
 
-const lngs = {
-  en:{nativeName:'English'},
-  ru:{nativeName: 'Русский'}
-}
 
 const Authorization: React.FunctionComponent<AuthorizationProps> = () => {
- // const {t,i18n} = useTranslation();
 
-  //const { t, i18n } = useTranslation('translation');
   
 const {t} = useTranslation('translation')
 
@@ -43,7 +31,7 @@ const {t} = useTranslation('translation')
         type="text"
         setValueHandler={setLogin}
         className="input_authorization authorization_login"
-        placeholder = {t('description.loginPlaceholder')}>
+        placeholder = {t('description.authorization.loginPlaceholder')}>
  
  
 </Input>
@@ -52,21 +40,21 @@ const {t} = useTranslation('translation')
         type="text"
         setValueHandler={setPassword}
         className="input_authorization authorization_password"
-        placeholder={t('description.passwordPlaceholder')}
+        placeholder={t('description.authorization.passwordPlaceholder')}
       ></Input>
       <Button
         color="blue"
         buttonEventHandler={buttonEvent}
         className="authorization__button"
       >
-        {t('description.loginButton')}
+        {t('description.authorization.loginButton')}
       </Button>
       <Link to="accountsearch" className="forget-password__authorization">
-        {t('description.forgetPassword')}
+        {t('description.authorization.forgetAccount')}
       </Link>
       <Link to="registration" className="button-link">
         <Button color="green" className="authorization__button">
-          {t('description.createNewAccount')}
+          {t('description.authorization.createNewAccount')}
         </Button>
        
       </Link>

@@ -4,17 +4,12 @@ import Input from "../../generic(ui)/inputs/Input";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { AccountSearchProps } from "./AccountSearch-interface";
+import { useTranslation } from "react-i18next";
+import i18n from "../../i18n/i18n";
 
-
-  const data = {
-    ACCOUNTSEARCHTEXT: "Чтобы найти свой аккаунт, введите ваш электронный адрес или номер мобильного телефона",
-    ACCOUNTSEARCHTITLE:"Поиск аккаунта",
-    SEARCH:'Поиск',
-    CANCEL:'Поиск'
-  }
 
 const AccountSearch: React.FunctionComponent<AccountSearchProps> = () => {
-  const [value,setValue] = useState('')
+  const {t} = useTranslation('translation');
   const [login, setLogin] = useState('')
    const buttonEvent = () => {
    const body = {login}
@@ -23,16 +18,29 @@ const AccountSearch: React.FunctionComponent<AccountSearchProps> = () => {
 
     return(
         <div className="account-search">
-        <h3 className='account-search__title'>{data.ACCOUNTSEARCHTITLE}</h3>
-        <h3 className="account-search__text"> {data.ACCOUNTSEARCHTEXT} </h3>
-        <Input  type='text' setValueHandler={setLogin} className='account-search__box' inputClassName="account-search_input" placeholder="Электронный адрес или номер телефона"></Input>
+        <h3 className='account-search__title'>{t('description.accountSearch.accountSearchTitle')}</h3>
+        <h3 className="account-search__text"> {t('description.accountSearch.accountSearchText')} </h3>
+        <Input  type='text' setValueHandler={setLogin} className='account-search__box' inputClassName="account-search_input" placeholder={t('description.authorization.loginPlaceholder')}></Input>
         <div className="account-search__buttons">
             <Link to='/'  className="button-link">
-        <Button color='light' className="account-search__button"> {data.CANCEL} </Button>
+        <Button color='light' className="account-search__button"> {t('description.accountSearch.cancel')} </Button>
         </Link>
-        <Button color='blue' buttonEventHandler={buttonEvent} className="account-search__button" >{data.SEARCH}</Button>
+        <Button color='blue' buttonEventHandler={buttonEvent} className="account-search__button" >{t('description.accountSearch.search')}</Button>
         </div>
+        <Button color="green" className="change-language_button" buttonEventHandler={()=> i18n.changeLanguage('en')}>
+        EN
+        </Button>
+        <Button color="green" className="change-language_button" buttonEventHandler={()=> i18n.changeLanguage('ru')}>
+          RU
+        </Button>
+        <Button color="green" className="change-language_button" buttonEventHandler={()=> i18n.changeLanguage('de')}>
+        DE
+        </Button>
+        <Button color="green" className="change-language_button" buttonEventHandler={()=> i18n.changeLanguage('pl')}>
+          PL
+        </Button>
         </div>
+        
     )
 }
 

@@ -3,6 +3,7 @@ import { ContainerDateOfBirthProps } from "./ContainerDateOfBirth-interface";
 import "./ContainerDateOfBirth.css";
 import SelectInput from "../select-input/Select-input";
 import { SelectOption } from "../select-input/Select-input-interface";
+import { useTranslation } from "react-i18next";
 
 const data = {
   TITLE:'Дата рождения',
@@ -17,6 +18,7 @@ const data = {
 const ContainerDateOfBirth: React.FunctionComponent<
   ContainerDateOfBirthProps
 > = ({dateSelect}) => {
+  const {t} = useTranslation('translation');
   const [value,setValue] = useState('')
   const [day,setDay] = useState('')
   const [month, setMonth] = useState('')
@@ -38,9 +40,9 @@ const ContainerDateOfBirth: React.FunctionComponent<
   }
 
   const getMonthOptions = (): SelectOption[] => {
-    return data.MONTH.map((item, index) => ({
+    return new Array(12).fill(0).map((item, index) => ({
       value: index + 1,
-      text: item
+      text: t(`description.registration.dateOfBirth.month.${index}`)
     }))
   }
 
@@ -57,7 +59,7 @@ const ContainerDateOfBirth: React.FunctionComponent<
 
   return (
     <div className="date-of-birth__container">
-      <p className="date-of-birth__title">{data.TITLE}</p>
+      <p className="date-of-birth__title">{t("description.registration.dateOfBirth.dateOfBirth")}</p>
       <div className="day-of-birth__container">
         <SelectInput selectHandlerChange={dateSelect} name="day" id="day-select" options={getDayOptions()} />
         <SelectInput selectHandlerChange={dateSelect} name="month" id="month-select" options={getMonthOptions()} />
