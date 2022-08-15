@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import Button from "../../generic(ui)/buttons/Button";
 import ContainerDateOfBirth from "../../generic(ui)/checkbox/container-date-of-birth/ContainerDateOfBirth";
 import Input from "../../generic(ui)/inputs/Input";
-import Logo from "../../generic(ui)/logo/Logo";
+import Logo from "../../generic(ui)/logo/logo/Logo";
 import i18n from "../../i18n/i18n";
 import { DateSelect, RegistrationProps } from "./Registration-interface-types";
 import "./Registration.css";

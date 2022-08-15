@@ -1,14 +1,12 @@
 import React, { useState } from "react";
 import { ContainerDateOfBirthProps } from "./ContainerDateOfBirth-interface";
 import "./ContainerDateOfBirth.css";
-import SelectInput from "../select-input/Select-input";
-import { SelectOption } from "../select-input/Select-input-interface";
+import SelectInput from "../../inputs/select-input/Select-input";
+import { SelectOption } from "../../inputs/select-input/Select-input-interface";
 import { useTranslation } from "react-i18next";
 
 const data = {
-  TITLE:'Дата рождения',
   DAYS: 31,
-  MONTH: ['январь', 'февраль', 'март', 'апрель', 'май', 'июнь', 'июль', 'август', 'сентябрь', 'октябрь', 'ноябрь', 'декабрь'],
   YEAR:{
     MAX: 2022,
     MIN: 1960

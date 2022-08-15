@@ -62,6 +62,10 @@ i18n
              cancel:'Cancel',
              
             },
+            headerMyPage:{
+                search:"Search on Facebook",
+
+            },
             footer:{
                 languages: "English (US)   Русский   Беларуская   العربية   Türkçe   Polski   Italiano   Tiếng Việt   Deutsch   Español   Português (Brasil)",
                 links:    "Sign Up   Log In  Messenger  Facebook  Lite Watch   Places   Games   Marketplace  Facebook Pay   Oculus   Portal   Instagram  Bulletin   Local Fundraisers    Services   Voting Information Center   Groups   About   Create Ad    Create Page    Developers   Careers  Privacy   Cookies   Ad choices   Terms   Help    Contact Uploading & Non-UsersSettingsActivity",
@@ -161,6 +165,10 @@ i18n
                     search: 'Поиск',
                     cancel:'Отмена',
                    },
+                   headerMyPage:{
+                    search:"Поиск на Facebook",
+    
+                },
                    footer:{
                     languages: "Русский  Беларуская  English (US)   العربية  Türkçe  Polski  Italiano  Tiếng Việt  Deutsch  Español  Português (Brasil)",
                     links:    "Регистрация   Вход   Messenger  Facebook  Lite Watch   Места   Игры   Marketplace   Facebook Pay    Oculus   Portal   Instagram   Bulletin   Местные Благотворительные акции  Услуги  Центр информации о голосовании  Группы  Информация  Создать рекламу  Создать Страницу  Разработчикам  Вакансии  Конфиденциальност  Файлы cookie  Рекламные предпочтения  Условия использования  Справка  Contact Uploading & Non-Users  Настройки  Журнал действий",
