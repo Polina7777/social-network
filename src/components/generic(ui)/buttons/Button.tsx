@@ -1,13 +1,21 @@
+
 import React from "react"
+import { ButtonProps } from "./Button-interface"
 import "./Button.css"
 
-
-
-
-const Button = () => {
+const Button: React.FunctionComponent <ButtonProps> = ({
+   buttonEventHandler,
+   key,
+  className,
+   children,
+   color,
+   disabled,
+}) => {
    return(
-    <button className="Button">
-     Click me
+    <button className = {`${color}  ${className}-${color}`} 
+     onClick= {buttonEventHandler} key={key} color = {color} disabled = {disabled}>
+      {children}
+
     </button>
    )
 }

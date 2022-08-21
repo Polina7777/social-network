@@ -1,10 +1,13 @@
+
+import { InputProps } from "./Input-interface";
 import "./Input.css"
 
-const Input = () => {
+
+const Input: React.FC<InputProps> = ({type,value,id,name,children,placeholder,className,inputClassName,setValueHandler,}) => {
+
     return (
-     <div className="input">
-        <input type='search' >
-            
+     <div className={className}>
+        <input className="input" id={id} type={type} value={value} name={name} placeholder= {placeholder} onChange={(event: React.ChangeEvent<HTMLInputElement>)=>setValueHandler(event.target.value)}>       
         </input>
      </div>
     )

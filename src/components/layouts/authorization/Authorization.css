@@ -1,0 +1,45 @@
+.authorization {
+    display:flex;
+    flex-direction: column;
+    width: 300px;
+    background-color:white;
+   padding: 15px 10px 15px;
+   border: 2px solid rgba(236, 234, 234, 0.361);
+   border-radius: 3px;
+   box-shadow: 7px 5px 10px 5px rgb(218, 215, 215); 
+   margin: 40px auto;
+   gap:7px;
+  
+}
+
+
+.header__authorization {
+    display: flex;
+    font-size: 17px;
+    padding: 4px;
+}
+
+
+.button-link {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    width: 100%;
+}
+
+
+.forget-password {
+    text-align: center;
+    padding: 15px 0px;
+    font-size: small;
+    color: rgb(60, 99, 240);
+    border-bottom: 3px solid rgba(160, 160, 160, 0.098);
+    border-radius: 3px;
+}
+.forget-password__authorization {
+    text-align: center;
+    font-size: 14px;
+    color: rgb(60, 99, 240);
+    text-decoration: none;
+    padding: 7px 0;
+}
