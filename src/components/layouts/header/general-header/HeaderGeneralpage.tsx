@@ -1,5 +1,4 @@
 import Input from "../../../generic(ui)/inputs/Input";
-import Button from "../../../generic(ui)/buttons/Button";
 
 // import {ReactComponent as Home} from '../../../../assets/image/icons/home.svg'
 // import {ReactComponent as Group} from '../../../../assets/image/icons/group.svg'
@@ -15,12 +14,11 @@ import message from '../../../../assets/image/icons/message.svg'
 import bell from '../../../../assets/image/icons/bell.svg'
 import accounts from '../../../../assets/image/icons/accounts.svg'
 import "./HeaderGeneralpage.css";
-import Logo from "../../../generic(ui)/logo/logo/Logo";
 import { useLocation } from "react-router-dom";
-import { Link } from "react-router-dom";
 import { useState } from "react";
 import { HeaderGeneralProps } from "./HeaderGeneralpage-interface";
 import { useTranslation } from "react-i18next";
+
 import LogoSmall from "../../../generic(ui)/logo/logoSmall/Logo-small";
 import Icon from "../../../generic(ui)/icon/Icon";
 declare module "*.svg";
