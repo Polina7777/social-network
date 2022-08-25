@@ -1,15 +1,15 @@
-import React, {ReactNode } from "react"
+import React, {FunctionComponent, ImgHTMLAttributes, ReactElement, ReactNode, SVGProps } from "react"
 
 export interface IconProps {
+    type?:string
     Img?:React.Component
     id?:string
-    key?:string
+    key?:string|number
     text?: string
     className?:string
     children?:ReactNode;
-   // src?:React.Component;
-   src?:string
+    src?:string
     alt?:string;
-   
-
+    onClickBorderedEvent?:()=>void
 }
+

@@ -1,14 +1,18 @@
 
+import { Link } from 'react-router-dom'
 import { IconProps } from './Icon-interface'
 import './Icon.css'
 
 
-const Icon: React.FC<IconProps> = ()=> {
+const Icon: React.FC<IconProps> = ({className,src,alt,id,text,key,type,onClickBorderedEvent})=> {
     return (
-        <div className={className}>
-           <input className="input" id={id} type={type} value={value} name={name} placeholder= {placeholder} onChange={(event: React.ChangeEvent<HTMLInputElement>)=>setValueHandler(event.target.value)}>       
-           </input>
+        <Link to=''>
+        <div className= {`${className}__div`}>
+           < img className={className} src={src} alt={alt} id={id} key={key} onClick={onClickBorderedEvent} >       
+           </img>
+         <p className='text' >{text}</p> 
         </div>
+        </Link>
        )
 }
 
