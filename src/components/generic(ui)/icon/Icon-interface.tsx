@@ -1,4 +1,4 @@
-import React, {FunctionComponent, ImgHTMLAttributes, ReactElement, ReactNode, SVGProps } from "react"
+import React, { ReactNode } from "react"
 
 export interface IconProps {
     type?:string

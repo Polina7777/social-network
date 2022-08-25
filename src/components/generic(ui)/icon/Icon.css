@@ -22,15 +22,19 @@
     justify-content: center;
     background-color: #8080806e;
     border-radius: 50%;
-    width:30px;
+    width:40px;
     padding: 7px;
 }
+.icon-image__circled__div{
+    margin-right: 5px;
+}
+
 .icon-image__circled {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+
     background-color: #8080806e;
     border-radius: 50%;
-    width:30px;
+    width:40px;
     padding: 7px;
 }

@@ -14,12 +14,12 @@ import cell from '../../../../assets/image/icons/cell.svg'
 import message from '../../../../assets/image/icons/message.svg'
 import bell from '../../../../assets/image/icons/bell.svg'
 import accounts from '../../../../assets/image/icons/accounts.svg'
-import "./HeaderAutopage.css";
+import "./HeaderGeneralpage.css";
 import Logo from "../../../generic(ui)/logo/logo/Logo";
 import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import { HeaderMyPageProps } from "./HeaderAutopage-interface";
+import { HeaderGeneralProps } from "./HeaderGeneralpage-interface";
 import { useTranslation } from "react-i18next";
 import LogoSmall from "../../../generic(ui)/logo/logoSmall/Logo-small";
 import Icon from "../../../generic(ui)/icon/Icon";
@@ -79,7 +79,7 @@ const iconArrPart2 = [
 
 
 
-const HeaderAutopage: React.FunctionComponent<HeaderMyPageProps> | any = () => {
+const HeaderGeneralpage: React.FunctionComponent<HeaderGeneralProps> | any = () => {
   const {t} = useTranslation('translation')
 
   const [password, setPassword] = useState("");
@@ -117,4 +117,4 @@ const HeaderAutopage: React.FunctionComponent<HeaderMyPageProps> | any = () => {
     );
   };
 
-export default HeaderAutopage;
+export default HeaderGeneralpage;
