@@ -1,0 +1,15 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding:5px 10px 0;
+}
+.search-on-Facebook__box{
+    display: flex;
+}
+.icon-button__box {
+    display: flex;
+}
+.icon-myPage__box{
+    display: flex;
+    justify-content: center;
+}

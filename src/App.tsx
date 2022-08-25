@@ -6,6 +6,7 @@ import Header from './components/layouts/header/Header';
 import Main from './components/layouts/main/Main';
 import i18next from 'i18next';
 import { useTranslation } from 'react-i18next';
+import HeaderAutopage from './components/layouts/header/my-page-header/HeaderAutopage';
 
 
 
@@ -14,7 +15,7 @@ const App: React.FunctionComponent = () => {
   return (
     <BrowserRouter>
     <div className="App">
-      <Header/>
+     <HeaderAutopage/>
       <Main/>
     <Footer/>
     </div>
