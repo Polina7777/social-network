@@ -68,7 +68,11 @@ i18n
             },
             createNewHistory: {
                 title:'Create new history',
-                article:' Share a photo or write something.'
+                article:' Share a photo or write something.',
+                question:"What's new ?" ,
+                life:'Life',
+                fotoVideo:'Photo/Video',
+                feelingAction:'Feelings/Actions'
             },
             footer:{
                 languages: "English (US)   Русский   Беларуская   العربية   Türkçe   Polski   Italiano   Tiếng Việt   Deutsch   Español   Português (Brasil)",
@@ -175,7 +179,11 @@ i18n
                 },
                 createNewHistory: {
                     title:'Создать историю',
-                    article:'Поделитесь фото или напишите что-нибудь.'
+                    article:'Поделитесь фото или напишите что-нибудь.',
+                    question:'Что у вас нового?',
+                    life:'Прямой эфир',
+                    fotoVideo:'Фото/Видео',
+                    feelingAction:'Чувства/Действия'
                 },
                    footer:{
                     languages: "Русский  Беларуская  English (US)   العربية  Türkçe  Polski  Italiano  Tiếng Việt  Deutsch  Español  Português (Brasil)",

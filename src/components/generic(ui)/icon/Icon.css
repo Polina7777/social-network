@@ -38,3 +38,19 @@
     width:40px;
     padding: 7px;
 }
+
+.icon-colored {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.icon-colored__div {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.text {
+    font-size: 10px;
+    text-decoration: none;
+}

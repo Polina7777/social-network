@@ -8,6 +8,7 @@ import i18next from 'i18next';
 import { useTranslation } from 'react-i18next';
 import HeaderGeneralpage from './components/layouts/header/general-header/HeaderGeneralpage';
 import CreateNewHistoryBox from './components/generic(ui)/create-new-history-container/Create-new-history';
+import ShareSomethingNewContainer from './components/generic(ui)/share-something-new-container/Share-something-new';
 
 
 
@@ -19,6 +20,7 @@ const App: React.FunctionComponent = () => {
       <Header/>
      <HeaderGeneralpage/>
      <CreateNewHistoryBox/>
+     <ShareSomethingNewContainer/>
       <Main/>
     <Footer/>
     </div>
