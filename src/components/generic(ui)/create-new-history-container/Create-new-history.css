@@ -1,9 +1,31 @@
 .create-new-history__box {
     display: flex;
- 
+    width: 500px;
+    background: #bac5cf;
+    border-radius: 10px;
+    padding: 7px;
+    align-items: center;
+    border: 2px solid rgba(190, 187, 187, 0.208);
 }
 
-
+.plus__div {
+  
+    display: flex;
+    margin-right: 15px;
+}
 .plus {
     width:30px;
+}
+.create-new-history__title {
+    padding:3px 0;
+    margin: auto 0;
+    font-size: 17px;
+    color: rgba(0, 0, 0, 0.66);
+    font-weight: 500;
+}
+.create-new-history__article {
+    margin: auto 0;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.66);
+    font-weight: 300;
 }
