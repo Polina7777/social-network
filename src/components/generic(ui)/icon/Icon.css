@@ -49,8 +49,21 @@
     justify-content: space-between;
     flex-wrap: wrap;
 }
+.camera-icon {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.camera-icon__div{
+    display: flex;
+    justify-content:space-between ;
+    padding: 0px 10px;
+
+    border-radius: 20px;
+    border: 2px solid #80c5e86e;
+}
 
 .text {
-    font-size: 10px;
+    font-size: 12px;
     text-decoration: none;
 }
