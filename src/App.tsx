@@ -10,6 +10,7 @@ import HeaderGeneralpage from './components/layouts/header/general-header/Header
 import CreateNewHistoryBox from './components/generic(ui)/create-new-history-container/Create-new-history';
 import ShareSomethingNewContainer from './components/generic(ui)/share-something-new-container/Share-something-new';
 import CreateRoomContainer from './components/generic(ui)/create-room-container/Create-room';
+import GeneralPageCentralPartHome from './components/layouts/general-page-central-part/General-page-central-part';
 
 
 
@@ -20,9 +21,7 @@ const App: React.FunctionComponent = () => {
     <div className="App">
       <Header/>
      <HeaderGeneralpage/>
-     <CreateNewHistoryBox/>
-     <ShareSomethingNewContainer/>
-     <CreateRoomContainer/>
+    <GeneralPageCentralPartHome/>
       <Main/>
     <Footer/>
     </div>

@@ -1,11 +1,13 @@
 .create-new-history__box {
     display: flex;
     width: 500px;
-    background: #bac5cf;
+    background: white;
+    box-shadow: 7px 5px 10px 5px rgb(218 215 215);
     border-radius: 10px;
     padding: 7px;
     align-items: center;
     border: 2px solid rgba(190, 187, 187, 0.208);
+    margin-bottom: 7px;
 }
 
 .plus__div {

@@ -75,6 +75,12 @@ i18n
                 feelingAction:'Feelings/Actions'
             },
             createRoom:'Create Room',
+            findFriends: {
+                article:'No more posts',
+                subArticle:'Add new friends to see even more posts in your feed',
+                buttonName:'Find friends'
+            },
+
             footer:{
                 languages: "English (US)   Русский   Беларуская   العربية   Türkçe   Polski   Italiano   Tiếng Việt   Deutsch   Español   Português (Brasil)",
                 links:    "Sign Up   Log In  Messenger  Facebook  Lite Watch   Places   Games   Marketplace  Facebook Pay   Oculus   Portal   Instagram  Bulletin   Local Fundraisers    Services   Voting Information Center   Groups   About   Create Ad    Create Page    Developers   Careers  Privacy   Cookies   Ad choices   Terms   Help    Contact Uploading & Non-UsersSettingsActivity",
@@ -187,6 +193,11 @@ i18n
                     feelingAction:'Чувства/Действия'
                 },
                 createRoom:'Создать комнату',
+                findFriends: {
+                    article:'Публикаций больше нет',
+                    subArticle:'Добавьте новых друзей,чтобы видеть еще больше публикаций в вашей Ленте',
+                    buttonName:'Найти друзей'
+                },
                    footer:{
                     languages: "Русский  Беларуская  English (US)   العربية  Türkçe  Polski  Italiano  Tiếng Việt  Deutsch  Español  Português (Brasil)",
                     links:    "Регистрация   Вход   Messenger  Facebook  Lite Watch   Места   Игры   Marketplace   Facebook Pay    Oculus   Portal   Instagram   Bulletin   Местные Благотворительные акции  Услуги  Центр информации о голосовании  Группы  Информация  Создать рекламу  Создать Страницу  Разработчикам  Вакансии  Конфиденциальност  Файлы cookie  Рекламные предпочтения  Условия использования  Справка  Contact Uploading & Non-Users  Настройки  Журнал действий",

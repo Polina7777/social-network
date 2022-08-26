@@ -1,8 +1,10 @@
 .create-room__container {
     display: flex;
     width: 500px;
-    background-color: aqua;
+    background: white;
+    box-shadow: 7px 5px 10px 5px rgb(218 215 215);
     border-radius: 10px;
     padding: 10px;
+    margin-bottom: 7px;
     
 }
