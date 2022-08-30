@@ -5,14 +5,15 @@ import Input from "../../../generic(ui)/inputs/Input";
 // import {ReactComponent as Computer} from '../../../../assets/image/icons/computer.svg'
 // import {ReactComponent as Store} from '../../../../assets/image/icons/store.svg'
 // import {ReactComponent as Cell} from '../../../../assets/image/icons/cell.svg'
-import home from '../../../../assets/image/icons/home.svg'
-import people from '../../../../assets/image/icons/people.svg'
-import computer from '../../../../assets/image/icons/computer.svg'
+import home from '../../../../assets/image/icons/home2.svg'
+import people from '../../../../assets/image/icons/people2.svg'
+import monitor from '../../../../assets/image/icons/monitor.svg'
 import store from '../../../../assets/image/icons/store.svg'
 import cell from '../../../../assets/image/icons/cell.svg'
 import message from '../../../../assets/image/icons/message.svg'
 import bell from '../../../../assets/image/icons/bell.svg'
 import accounts from '../../../../assets/image/icons/accounts.svg'
+import game from '../../../../assets/image/icons/game.svg'
 import "./HeaderGeneralpage.css";
 import { useLocation } from "react-router-dom";
 import { useState } from "react";
@@ -34,17 +35,17 @@ const iconArrPart1 = [
     className:'icon-image__bordered',
    alt: 'people',
    path:'/friends'},
-   {src:computer,
+   {src:monitor,
     className:'icon-image__bordered',
-   alt: 'computer',
+   alt: 'monitor',
    path:'/facebookWatch'},
    {src:store,
    className:'icon-image__bordered',
    alt: 'store',
    path:'/store'},
-   {src:cell,
+   {src:game,
     className:'icon-image__bordered',
-   alt: 'cell',
+   alt: 'games',
    path:'/games'},
 
 ]
