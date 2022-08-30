@@ -4,6 +4,9 @@
     height: 100%;
 
 }
+.authorization-title__logo{
+    width: 270px;
+}
 .header-before-authorization__logo {
     display: flex;
     width: 6%;

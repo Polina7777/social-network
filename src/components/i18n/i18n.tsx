@@ -23,6 +23,7 @@ i18n
             translation: {
              description: {
                 authorization:{ 
+                article:'Connect with friends and the world around you on Facebook.',
                  authorizationTitle:'Log Into Facebook',
                 loginPlaceholder:"Email address or phone number",
                 passwordPlaceholder:"Password",
@@ -94,6 +95,7 @@ i18n
             translation: {
              description: {
                 authorization:{ 
+                    article:'Auf Facebook bleibst du mit Menschen in Verbindung und teilst Fotos, Videos und vieles mehr mit ihnen.',
                 authorizationTitle:'Bei Facebook anmelden',
                 loginPlaceholder:" E-Mail-Adresse oder Telefonnummer",
                 passwordPlaceholder:"Passwort",
@@ -145,6 +147,7 @@ i18n
             translation: {
                 description: {
                     authorization:{
+                        article:'Facebook помогает вам всегда оставаться на связи и общаться со своими знакомыми.',
                      authorizationTitle:'Вход на Facebook',
                     loginPlaceholder:"Электронный адрес или номер телефона",
                     passwordPlaceholder:"Пароль",
@@ -209,6 +212,7 @@ i18n
             translation: {
                 description: {
                     authorization:{
+                        article:'Facebook дапамагае заставацца на сувязі і дзяліцца навінамі з людзьмі, якіх вы ведаеце.',
                      authorizationTitle:'Увайсці ў Facebook',
                     loginPlaceholder:"Адрас электроннай пошты цi нумар тэлефона",
                     passwordPlaceholder:"Пароль",
@@ -253,6 +257,7 @@ i18n
                 translation: {
                     description: {
                         authorization:{
+                            article:'Facebook pomaga kontaktować się z innymi osobami oraz udostępniać im różne informacje i materiały.',
                          authorizationTitle:'Zaloguj się do Facebooka',
                         loginPlaceholder:" Adres e-mail lub numer telefonu komórkowego",
                         passwordPlaceholder:"Haslo",
@@ -297,6 +302,7 @@ i18n
             translation: {
                 description: {
                     authorization:{
+                        article:'Facebook te ayuda a comunicarte y compartir con las personas que forman parte de tu vida.',
                      authorizationTitle:'Iniciar sesión en Facebook',
                     loginPlaceholder:"Correo electrónico o número de teléfono",
                     passwordPlaceholder:"Contraseña",
@@ -337,10 +343,11 @@ i18n
                 }      
                 },
         },
-        et:{
+        it:{
         translation: {
             description: {
                 authorization:{
+                    article:'Facebook ti aiuta a connetterti e rimanere in contatto con le persone della tua vita.',
                  authorizationTitle:'Accedi a Facebook',
                 loginPlaceholder:"E-mail o numero di telefono",
                 passwordPlaceholder:"Password",
@@ -385,6 +392,7 @@ i18n
             translation: {
                 description: {
                     authorization:{
+                        article:"O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.",
                      authorizationTitle:'Entrar no Facebook',
                     loginPlaceholder:"Email ou telefone",
                     passwordPlaceholder:"Senha",
@@ -429,6 +437,7 @@ i18n
                 translation: {
                     description: {
                         authorization:{
+                            article:'Facebook tanıdıklarınla iletişim kurmanı ve hayatında olup bitenleri paylaşmanı sağlar.',
                          authorizationTitle:"Facebook'a Giriş Yap",
                         loginPlaceholder:"E-posta veya telefon Numarası",
                         passwordPlaceholder:"şifre",
@@ -473,6 +482,7 @@ i18n
             translation: {
                 description: {
                     authorization:{
+                        article:'Facebook giúp bạn kết nối và chia sẻ với mọi người trong cuộc sống của bạn.',
                      authorizationTitle:"Đăng nhập Facebook",
                     loginPlaceholder:"Email hoặc số điện thoại",
                     passwordPlaceholder:"Mật",
