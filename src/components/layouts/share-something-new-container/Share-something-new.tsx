@@ -1,11 +1,11 @@
 
-import Icon from '../icon/Icon'
+import Icon from '../../generic(ui)/icon/Icon'
 import { ShareSomethingNewContainerProps } from './Share-something-new-interface'
 import './Share-something-new.css'
 
 
 import accounts from '../../../assets/image/icons/accounts.svg'
-import Input from '../inputs/Input'
+import Input from '../../generic(ui)/inputs/Input'
 import { t } from 'i18next'
 import { useTranslation } from 'react-i18next'
 import { useState } from 'react'

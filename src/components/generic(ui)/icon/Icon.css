@@ -4,6 +4,7 @@
     border-bottom: 3px solid blue;
     width: 100px;
     margin-right: 5px
+ 
 }
 .icon-image__bordered {
     display: flex;
@@ -68,3 +69,4 @@
     text-decoration: none;
     margin: 0;
 }
+

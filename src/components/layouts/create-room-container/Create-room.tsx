@@ -1,5 +1,5 @@
 
-import Icon from '../icon/Icon'
+import Icon from '../../generic(ui)/icon/Icon'
 import { CreateRoomContainerProps } from './Create-room-interface'
 import './Create-room.css'
 import camera from '../../../assets/image/icons/camera.svg'

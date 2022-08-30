@@ -1,7 +1,7 @@
 import { CreateNewHistoryBoxProps} from "./Create-new-history-interface";
 import './Create-new-history.css'
 import  plus from '../../../assets/image/icons/plus.svg'
-import Icon from "../icon/Icon";
+import Icon from "../../generic(ui)/icon/Icon";
 import { t } from "i18next";
 import { useTranslation } from "react-i18next";
 ;
