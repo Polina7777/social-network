@@ -6,6 +6,7 @@ export interface IconProps {
     Img?:React.Component
     id?:string
     key?:string|number
+    path:string
     text?: string|ReactNode|React.Component|ReactI18NextChild|any
     className?:string
     children?:ReactNode;

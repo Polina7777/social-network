@@ -27,35 +27,44 @@ declare module "*.svg";
 const iconArrPart1 = [
   {src:home,
     className:'icon-image__bordered',
-   alt: 'home',},
+   alt: 'home',
+  path:'/generalpage'},
 
    {src:people,
     className:'icon-image__bordered',
-   alt: 'people'},
+   alt: 'people',
+   path:'/friends'},
    {src:computer,
     className:'icon-image__bordered',
-   alt: 'computer'},
+   alt: 'computer',
+   path:'/facebookWatch'},
    {src:store,
    className:'icon-image__bordered',
-   alt: 'store'},
+   alt: 'store',
+   path:'/store'},
    {src:cell,
     className:'icon-image__bordered',
-   alt: 'cell'},
+   alt: 'cell',
+   path:'/games'},
 
 ]
 const iconArrPart2 = [
   {src:cell,
     className:'icon-image__circled',
-   alt: 'cell'},
+   alt: 'cell',
+   path:'/more'},
   {src:message,
     className:'icon-image__circled',
-   alt: 'message'},
+   alt: 'message',
+   path:'/messages'},
    {src:bell,
     className:'icon-image__circled',
-   alt: 'bell'},
+   alt: 'bell',
+   path:'/notification'},
    {src:accounts,
     className:'icon-image__avatar',
-   alt: 'avatar'},
+   alt: 'avatar',
+   path:'/account'},
    
 
 ]
@@ -87,13 +96,13 @@ const HeaderGeneralpage: React.FunctionComponent<HeaderGeneralProps> | any = () 
     const body = { password, login };
     console.log(body);
   }
-    let location = useLocation();
-    if (location.pathname !== "/accountsearch") {
-      return;
-    }
+    // let location = useLocation();
+    // if (location.pathname !== "/accountsearch") {
+    //   return;
+    // }
   
     return (
-      <div className="header">
+      <div className="header-general-page">
         <div className='search-on-Facebook__box'>
         <LogoSmall className="header-small__logo"></LogoSmall>
           <Input
@@ -104,10 +113,10 @@ const HeaderGeneralpage: React.FunctionComponent<HeaderGeneralProps> | any = () 
           ></Input>
      </div>
      <div className="icon-button__box">
-       {iconArrPart1.map((item,index) => <Icon src={item.src} className={item.className} alt={item.alt} key={index} />)} 
+       {iconArrPart1.map((item,index) => <Icon path={item.path} src={item.src} className={item.className} alt={item.alt} key={index} />)} 
      </div>
      <div className="icon-myPage__box">
-     {iconArrPart2.map((item,index) => <Icon src={item.src} className={item.className} alt={item.alt} key={index} />)} 
+     {iconArrPart2.map((item,index) => <Icon path={item.path} src={item.src} className={item.className} alt={item.alt} key={index} />)} 
      </div>
           
         </div>

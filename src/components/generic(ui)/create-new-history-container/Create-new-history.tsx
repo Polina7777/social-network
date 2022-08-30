@@ -10,7 +10,7 @@ const CreateNewHistoryBox: React.FC<CreateNewHistoryBoxProps> = (className) => {
     const {t} = useTranslation('translation')
     return(
        <div className="create-new-history__box">
-       <Icon src={plus} className='plus' />
+       <Icon path='/generalpage' src={plus} className='plus' />
        <div className="create-new-history__title">
         <p className="create-new-history__title"> {t('description.createNewHistory.title')}</p>
         <p className="create-new-history__article"> {t('description.createNewHistory.article')}</p>

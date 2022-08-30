@@ -11,7 +11,7 @@ const CreateRoomContainer: React.FC<CreateRoomContainerProps> = () => {
 
     return (
         <div className='create-room__container'>
-            <Icon src= {camera} alt='camera' text={t('description.createNewHistory.title')} className='camera-icon'/>
+            <Icon path='/generalpage' src= {camera} alt='camera' text={t('description.createNewHistory.title')} className='camera-icon'/>
         </div>
     )
 

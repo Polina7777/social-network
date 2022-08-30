@@ -20,8 +20,6 @@ const App: React.FunctionComponent = () => {
     <BrowserRouter>
     <div className="App">
       <Header/>
-     <HeaderGeneralpage/>
-    <GeneralPageCentralPartHome/>
       <Main/>
     <Footer/>
     </div>
