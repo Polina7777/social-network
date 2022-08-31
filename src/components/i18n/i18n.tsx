@@ -126,6 +126,8 @@ i18n
              cancel:'Abbrechen',
              
             },
+            headerMyPage:{
+                search:"Поиск на Facebook",
             footer:{
                 languages: "Deutsch   Русский   Беларуская   English (US)    العربية   Türkçe   Polski   Italiano   Tiếng Việt   Español   Português (Brasil)",
                 links:"Registrieren   Anmelden   Messenger   Facebook Lite   Watch  Orte   Spiele   Marketplace   Facebook Pay   Oculus   Portal   Instagram   Bulletin   LokalesSpendenaktionen   Services   Wahl-Informationszentrum   Gruppen   Info   Werbeanzeige erstellen   Seite erstellen   Entwickler   Karriere   Privatsphäre   Cookies   Werbepräferenzen   Nutzungsbedingungen   Hilfe   Hochladen von Kontakten und Nicht-Nutzer",
