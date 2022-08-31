@@ -13,7 +13,7 @@ import birthday from '../../../assets/image/icons/birthday.svg'
 const FriendsNavigationContainer:React.FC<FriendsNavigationContainerProps> = () => {
     const {t} = useTranslation('translation')
 
-    const friendIconArr = [
+    const friendsIconsArr = [
         {src:friendrequest,
         alt:'friend-request',
         className:'icon__circled',
@@ -34,17 +34,20 @@ const FriendsNavigationContainer:React.FC<FriendsNavigationContainerProps> = () 
                     className:'icon__circled',
                     text:{t('description.friends.birthdays')}
                     },
-                    {src:allfriends,
-                        alt:'lists',
-                        className:'icon__circled',
-                        text:{t('description.friends.list')}
-                        },
+        {src:allfriends,
+                    alt:'lists',
+                    className:'icon__circled',
+                    text:{t('description.friends.lists')}
+                    },
     ]     
     return (
    <div className="friends-navigation__container">
       <div className="friends__title">
         <p className="friends">{t('description.friends.title')}</p>
         <Icon src={gear} className='icon-gear' alt='gear'/>
+      </div>
+      <div className="friends-navigation__list">
+       
       </div>
 
    </div>
