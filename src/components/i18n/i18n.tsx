@@ -68,6 +68,7 @@ i18n
             },
             friends:{
                title:'Friends',
+               general:'General',
                requests:'Friend requests',      
                recommendations:' Recommendations',
                all:'All friends',
@@ -179,6 +180,7 @@ i18n
                 },
                 friends:{
                     title:'Друзья',
+                    general:'Главная',
                     requests:'Запросы на добавление в друзья',      
                    recommendations:'Рекомендации',
                    all:'Все друзья',
