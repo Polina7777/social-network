@@ -127,7 +127,17 @@ i18n
              
             },
             headerMyPage:{
-                search:"Поиск на Facebook",
+                search: "Auf Facebook suchen",
+            },
+            friends:{
+                title:'Freunde',
+                general:'Haupt',
+                requests:'Freundschaftsanfragen',      
+               recommendations:'Empfehlungen',
+               all:'Alle Freunde',
+               birthdays:'Geburtstage',
+               lists:'Benutzerdefinierte Listen'
+             },
             footer:{
                 languages: "Deutsch   Русский   Беларуская   English (US)    العربية   Türkçe   Polski   Italiano   Tiếng Việt   Español   Português (Brasil)",
                 links:"Registrieren   Anmelden   Messenger   Facebook Lite   Watch  Orte   Spiele   Marketplace   Facebook Pay   Oculus   Portal   Instagram   Bulletin   LokalesSpendenaktionen   Services   Wahl-Informationszentrum   Gruppen   Info   Werbeanzeige erstellen   Seite erstellen   Entwickler   Karriere   Privatsphäre   Cookies   Werbepräferenzen   Nutzungsbedingungen   Hilfe   Hochladen von Kontakten und Nicht-Nutzer",
@@ -233,6 +243,19 @@ i18n
                     search: 'Пошук',
                     cancel:'Скасаваць',
                    },
+                   headerMyPage:{
+                    search:"Пошук на Facebook",
+    
+                },
+                friends:{
+                    title:'Сябры',
+                    general:'Галоўная',
+                    requests:'Запыты на даданне ў сябры',      
+                   recommendations:'Рэкамендацыі',
+                   all:'Усе сябры',
+                   birthdays:'Дні нараджэння',
+                   lists:'Уласныя спісы'
+                 },
                    footer:{
                     languages: "Беларуская   Русский  Беларуская  English (US)   العربية  Türkçe  Polski  Italiano  Tiếng Việt  Deutsch  Español  Português (Brasil)",
                     links:    "Зарэгістравацца   Увайсці   Messenger   Facebook Lite   Watch   Месцы   Гульні   Marketplace   Facebook Pay   Oculus   Portal   Instagram   Bulletin   Тутэйшае   Дабрачынныя арганізацыі па збору ахвяраванняў   Паслугі   Voting Information Center   Суполкі   Звесткі   Стварыць рэкламу   Стварыць старонку   Распрацоўшчыкi   Кар'ера   Прыватнасць   Кукі   Выбар рэкламы   Умовы карыстання   Дапамога   Contact Uploading & Non-Users",
@@ -277,6 +300,19 @@ i18n
                         search: 'Szukaj',
                         cancel:'Anuluj',
                        },
+                       headerMyPage:{
+                        search:"Poshuk na Facebooku",
+        
+                    },
+                    friends:{
+                        title:'Przyjaciele',
+                        general:'Główne',
+                        requests:'Zaproszenia znajomych',      
+                       recommendations:'Rekomendacje',
+                       all:'Wszyscy przyjaciele',
+                       birthdays:'Urodziny',
+                       lists:'Własne listy'
+                     },
                        footer:{
                         languages: "Polski   Русский   Беларуская    English (US)   العربية   Türkçe   Italiano  Tiếng Việt    Deutsch    Español    Português (Brasil)",
                         links:    "Zarejestruj się    Zaloguj się    Messenger   Facebook Lite   Watch   Miejsca   Gry   Marketplace   Facebook Pay   Oculus   Portal   Instagram   Bulletin   Lokalne Zbiórki pieniędzy   Usługi   Centrum informacji o głosowaniu   Grupy   Informacje   Utwórz reklamę   Utwórz stronę   Twórcy aplikacji   Praca   Prywatność   Pliki cookie   Opcje wyświetlania reklam   Regulamin   Pomoc   Przesyłanie listy kontaktów i osób niebędących użytkownikami",
@@ -321,6 +357,18 @@ i18n
                     search: 'Buscar',
                     cancel:'Cancelar',
                    },
+                   headerMyPage:{
+                    search: "Buscar en Facebook",
+                },
+                friends:{
+                    title:'Amigos',
+                    general:'Principal',
+                    requests:'Solicitudes de amistad',      
+                   recommendations:'Recomendaciones',
+                   all:'Todos los amigos',
+                   birthdays:'Cumpleaños',
+                   lists:'Listas personalizadas'
+                 },
                    footer:{
                     languages: "Español   Русский   Беларуская   English (US)   العربية   Türkçe   Polski   Italiano   Tiếng Việt   Deutsch   Português (Brasil)",
                     links:"Registrarte   Iniciar  sesión   Messenger   Facebook Lite   Watch   Lugares   Juegos   Marketplace   Facebook Pay   Oculus   Portal   Instagram   Bulletin   LocalRecaudaciones de fondos   Servicios   Centro de información de votación   Grupos   Información   Crear anuncio   Crear página   Desarrolladores   Empleo   Privacidad   Cookies   Opciones de anuncios   Condiciones   Ayuda   Subir contactos y no usuarios",
@@ -365,6 +413,18 @@ i18n
                 search: 'Cerca',
                 cancel:'Annulla',
                },
+               headerMyPage:{
+                search: "Cerca su Facebook",
+            },
+            friends:{
+                title:'Amici',
+                general:'Principale',
+                requests:'Richieste di amicizia',      
+               recommendations:'Raccomandazioni',
+               all:'Tutti gli amici',
+               birthdays:'Compleanni',
+               lists:'Elenchi personalizzati'
+             },
                footer:{
                 languages: "Italiano   Русский   Беларуская   English (US)  العربية   Türkçe   Polski   Tiếng Việt   Deutsch   Español    Português (Brasil) ",
                 links:"Iscriviti   Accedi   Messenger   Facebook Lite   Watch   Luoghi   Giochi   Marketplace   Facebook Pay   Oculus   Portal   Instagram   Bulletin   Nei dintorni   Raccolte fondi   Servizi   Centro informazioni sul voto   Gruppi   Informazioni   Crea un'inserzione   Crea una Pagina   Sviluppatori   Opportunità di lavoro   Privacy   CookieScegli tu!   Condizioni   Centro assistenza   Caricamento dei contatti e non-utenti",
@@ -409,6 +469,18 @@ i18n
                     search: 'Pesquisar',
                     cancel:'Cancelar',
                    },
+                   headerMyPage:{
+                    search: "Pesquisar no Facebook",
+                },
+                friends:{
+                    title:'Amigos',
+                    general:'Básico',
+                    requests:'Pedidos de amizade',      
+                   recommendations:'Recomendações',
+                   all:'Todos os amigos',
+                   birthdays:'Aniversários',
+                   lists:'Listas personalizadas'
+                 },
                    footer:{
                     languages: "Português (Brasil)   Русский   Беларуская    English (US)    العربية   Türkçe   Polski   Italiano   Tiếng Việt    Deutsch   Español ",
                     links:"Cadastre-se   Entrar   Messenger   Facebook Lite   Watch   Locais   Jogos   Marketplace   Facebook Pay   Oculus   Portal   Instagram   Boletim   Local   Campanhas de arrecadação de fundos   Serviços    Central de Informações de Votação   Grupos   Sobre   Criar anúncio   Criar Página   Desenvolvedores   Carreiras   Privacidade   Cookies   Escolhas para anúncios   Termos   Ajuda   Carregamento de contatos e não usuários",
@@ -453,6 +525,18 @@ i18n
                         search: 'Ara',
                         cancel:'İptal Et',
                        },
+                       headerMyPage:{
+                        search: "Facebook'ta ara",
+                    },
+                    friends:{
+                        title:'Arkadaşlar',
+                        general:'Temel',
+                        requests:'Arkadaşlık istekleri',      
+                       recommendations:'Tavsiyeler',
+                       all:'Tüm arkadaşlar',
+                       birthdays:'Doğum günleri',
+                       lists:'Özel Listeler'
+                     },
                        footer:{
                         languages: "Türkçe   Русский   Беларуская   English (US)    العربية    Polski   Italiano   Tiếng Việt    Deutsch    Español   Português (Brasil) ",
                         links:"Kaydol   Giriş Yap   Messenger   Facebook Lite   Watch   Yerler   Oyunlar   Marketplace   Facebook Pay   Oculus   Portal   Instagram   Bulletin   Yerel   Bağış Kampanyaları   Hizmetler   Oy Kullanma Bilgi Merkezi   Gruplar   Hakkımızda   Reklam Oluştur   Sayfa Oluştur   Geliştiriciler   Kariyer Olanakları   Gizlilik   Çerezler   Ad Choices   Koşullar   Yardım   Kişi Yükleme ve Hesabı Olmayan Kişiler",
@@ -497,6 +581,18 @@ i18n
                     search: 'Tìm kiếm',
                     cancel:'Hủy',
                    },
+                   headerMyPage:{
+                    search: "Facebook'ta ara",
+                },
+                friends:{
+                    title:'Arkadaşlar',
+                    general:'Temel',
+                    requests:'Arkadaşlık istekleri',      
+                   recommendations:'Tavsiyeler',
+                   all:'Tüm arkadaşlar',
+                   birthdays:'Doğum günleri',
+                   lists:'Özel Listeler'
+                 },
                    footer:{
                     languages: "Tiếng Việt   Русский    Беларуская   English (US)    العربية   Türkçe    Polski   Italiano    Deutsch   Español    Português (Brasil)",
                     links:"Đăng ký    Đăng nhập    Messenger   Facebook Lite   Watch   Địa điểm   Trò chơi   Marketplace   Facebook Pay   Oculus   Portal   Instagram   Bulletin   Địa phương   Chiến dịch gây quỹ   Dịch vụ   Trung tâm thông tin bỏ phiếu   Nhóm   Giới thiệu   Tạo quảng cáo   Tạo Trang   Nhà phát triển   Tuyển dụng   Quyền riêng tư   Cookie   Lựa chọn quảng cáo   Điều khoản   Trợ giúp   Tải thông tin liên hệ lên & đối tượng không phải người dùng",
