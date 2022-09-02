@@ -71,20 +71,6 @@ const iconArrPart2 = [
 ]
 
 
-// const iconArr = [
-//   {src:'../../../../assets/image/icons/home.svg',
-//    alt: 'home'},
-//    {src: '../../../../assets/image/icons/group.svg',
-//    alt: 'group'},
-//    {src:'../../../../assets/image/icons/computer.svg',
-//    alt: 'computer'},
-//    {src:'../../../../assets/image/icons/store.svg',
-//    alt: 'store'},
-//    {src:'../../../../assets/image/icons/cell.svg',
-//    alt: 'cell'},
-
-// ]
-
 
 
 const HeaderGeneralpage: React.FunctionComponent<HeaderGeneralProps> | any = () => {
