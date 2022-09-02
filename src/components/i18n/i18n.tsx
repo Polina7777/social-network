@@ -66,6 +66,10 @@ i18n
                 search:"Search on Facebook",
 
             },
+            createNewHistory: {
+                title:'Create new history',
+                article:' Share a photo or write something.'
+            },
             footer:{
                 languages: "English (US)   Русский   Беларуская   العربية   Türkçe   Polski   Italiano   Tiếng Việt   Deutsch   Español   Português (Brasil)",
                 links:    "Sign Up   Log In  Messenger  Facebook  Lite Watch   Places   Games   Marketplace  Facebook Pay   Oculus   Portal   Instagram  Bulletin   Local Fundraisers    Services   Voting Information Center   Groups   About   Create Ad    Create Page    Developers   Careers  Privacy   Cookies   Ad choices   Terms   Help    Contact Uploading & Non-UsersSettingsActivity",
@@ -168,6 +172,10 @@ i18n
                    headerMyPage:{
                     search:"Поиск на Facebook",
     
+                },
+                createNewHistory: {
+                    title:'Создать историю',
+                    article:'Поделитесь фото или напишите что-нибудь.'
                 },
                    footer:{
                     languages: "Русский  Беларуская  English (US)   العربية  Türkçe  Polski  Italiano  Tiếng Việt  Deutsch  Español  Português (Brasil)",

@@ -1,0 +1,17 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding:5px 5px 0px 10px;
+    align-items:center ;
+}
+.search-on-Facebook__box{
+    display: flex;
+}
+.icon-button__box {
+    display: flex;
+    align-self: self-end;
+}
+.icon-myPage__box{
+    display: flex;
+    justify-content: center;
+}
