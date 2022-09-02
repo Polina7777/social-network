@@ -23,6 +23,7 @@ i18n
             translation: {
              description: {
                 authorization:{ 
+                article:'Connect with friends and the world around you on Facebook.',
                  authorizationTitle:'Log Into Facebook',
                 loginPlaceholder:"Email address or phone number",
                 passwordPlaceholder:"Password",
@@ -66,6 +67,7 @@ i18n
                 search:"Search on Facebook",
 
             },
+<<<<<<< HEAD
             friends:{
                title:'Friends',
                general:'General',
@@ -75,8 +77,26 @@ i18n
                birthdays:'Birthdays',
                lists:'Own lists'
             },
+=======
+            createNewHistory: {
+                title:'Create new history',
+                article:' Share a photo or write something.',
+                question:"What's new ?" ,
+                life:'Life',
+                fotoVideo:'Photo/Video',
+                feelingAction:'Feelings/Actions'
+            },
+            createRoom:'Create Room',
+            findFriends: {
+                article:'No more posts',
+                subArticle:'Add new friends to see even more posts in your feed',
+                buttonName:'Find friends'
+            },
+
+>>>>>>> develop
             footer:{
-                languages: "English (US)   Русский   Беларуская   العربية   Türkçe   Polski   Italiano   Tiếng Việt   Deutsch   Español   Português (Brasil)",
+                languages: 
+                 ["English (US)   Русский   Беларуская   العربية   Türkçe   Polski   Italiano   Tiếng Việt   Deutsch   Español   Português (Brasil)"],
                 links:    "Sign Up   Log In  Messenger  Facebook  Lite Watch   Places   Games   Marketplace  Facebook Pay   Oculus   Portal   Instagram  Bulletin   Local Fundraisers    Services   Voting Information Center   Groups   About   Create Ad    Create Page    Developers   Careers  Privacy   Cookies   Ad choices   Terms   Help    Contact Uploading & Non-UsersSettingsActivity",
             }
             
@@ -88,6 +108,7 @@ i18n
             translation: {
              description: {
                 authorization:{ 
+                    article:'Auf Facebook bleibst du mit Menschen in Verbindung und teilst Fotos, Videos und vieles mehr mit ihnen.',
                 authorizationTitle:'Bei Facebook anmelden',
                 loginPlaceholder:" E-Mail-Adresse oder Telefonnummer",
                 passwordPlaceholder:"Passwort",
@@ -151,6 +172,7 @@ i18n
             translation: {
                 description: {
                     authorization:{
+                        article:'Facebook помогает вам всегда оставаться на связи и общаться со своими знакомыми.',
                      authorizationTitle:'Вход на Facebook',
                     loginPlaceholder:"Электронный адрес или номер телефона",
                     passwordPlaceholder:"Пароль",
@@ -190,15 +212,6 @@ i18n
                     search:"Поиск на Facebook",
     
                 },
-                friends:{
-                    title:'Друзья',
-                    general:'Главная',
-                    requests:'Запросы на добавление в друзья',      
-                   recommendations:'Рекомендации',
-                   all:'Все друзья',
-                   birthdays:'Дни рождения',
-                   lists:'Cобственные списки'
-                 },
                    footer:{
                     languages: "Русский  Беларуская  English (US)   العربية  Türkçe  Polski  Italiano  Tiếng Việt  Deutsch  Español  Português (Brasil)",
                     links:    "Регистрация   Вход   Messenger  Facebook  Lite Watch   Места   Игры   Marketplace   Facebook Pay    Oculus   Portal   Instagram   Bulletin   Местные Благотворительные акции  Услуги  Центр информации о голосовании  Группы  Информация  Создать рекламу  Создать Страницу  Разработчикам  Вакансии  Конфиденциальност  Файлы cookie  Рекламные предпочтения  Условия использования  Справка  Contact Uploading & Non-Users  Настройки  Журнал действий",
@@ -210,6 +223,7 @@ i18n
             translation: {
                 description: {
                     authorization:{
+                        article:'Facebook дапамагае заставацца на сувязі і дзяліцца навінамі з людзьмі, якіх вы ведаеце.',
                      authorizationTitle:'Увайсці ў Facebook',
                     loginPlaceholder:"Адрас электроннай пошты цi нумар тэлефона",
                     passwordPlaceholder:"Пароль",
@@ -267,6 +281,7 @@ i18n
                 translation: {
                     description: {
                         authorization:{
+                            article:'Facebook pomaga kontaktować się z innymi osobami oraz udostępniać im różne informacje i materiały.',
                          authorizationTitle:'Zaloguj się do Facebooka',
                         loginPlaceholder:" Adres e-mail lub numer telefonu komórkowego",
                         passwordPlaceholder:"Haslo",
@@ -324,6 +339,7 @@ i18n
             translation: {
                 description: {
                     authorization:{
+                        article:'Facebook te ayuda a comunicarte y compartir con las personas que forman parte de tu vida.',
                      authorizationTitle:'Iniciar sesión en Facebook',
                     loginPlaceholder:"Correo electrónico o número de teléfono",
                     passwordPlaceholder:"Contraseña",
@@ -376,10 +392,11 @@ i18n
                 }      
                 },
         },
-        et:{
+        it:{
         translation: {
             description: {
                 authorization:{
+                    article:'Facebook ti aiuta a connetterti e rimanere in contatto con le persone della tua vita.',
                  authorizationTitle:'Accedi a Facebook',
                 loginPlaceholder:"E-mail o numero di telefono",
                 passwordPlaceholder:"Password",
@@ -436,6 +453,7 @@ i18n
             translation: {
                 description: {
                     authorization:{
+                        article:"O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.",
                      authorizationTitle:'Entrar no Facebook',
                     loginPlaceholder:"Email ou telefone",
                     passwordPlaceholder:"Senha",
@@ -492,6 +510,7 @@ i18n
                 translation: {
                     description: {
                         authorization:{
+                            article:'Facebook tanıdıklarınla iletişim kurmanı ve hayatında olup bitenleri paylaşmanı sağlar.',
                          authorizationTitle:"Facebook'a Giriş Yap",
                         loginPlaceholder:"E-posta veya telefon Numarası",
                         passwordPlaceholder:"şifre",
@@ -548,6 +567,7 @@ i18n
             translation: {
                 description: {
                     authorization:{
+                        article:'Facebook giúp bạn kết nối và chia sẻ với mọi người trong cuộc sống của bạn.',
                      authorizationTitle:"Đăng nhập Facebook",
                     loginPlaceholder:"Email hoặc số điện thoại",
                     passwordPlaceholder:"Mật",

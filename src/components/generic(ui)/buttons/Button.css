@@ -33,7 +33,7 @@
     
 }
 
-.header__button-blue {
+.header-before-authorization__button-blue {
     background-color:rgb(60, 99, 240);
     color: white;
     border: 2px solid rgb(60, 99, 240);
@@ -62,4 +62,8 @@
     margin-left: 10px;
     font-weight: 200;
     font-size: 15px;
+}
+
+.find-friend__button-blue {
+    padding: 7px 7px;
 }

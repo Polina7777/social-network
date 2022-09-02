@@ -6,6 +6,7 @@ import Registration from "../registration/Registration";
 
 import "./Main.css";
 import { MainProps } from "./Main-interface";
+import GeneralPageCentralPartHome from "../general-page-central-part/General-page-central-part";
 
 const Main: React.FunctionComponent<MainProps> = () => {
   return (
@@ -14,6 +15,7 @@ const Main: React.FunctionComponent<MainProps> = () => {
         <Route path="/" element={<Authorization />} />
         <Route path="accountsearch" element={<AccountSearch />} />
         <Route path="registration" element={<Registration />} />
+        <Route path="generalpage" element={<GeneralPageCentralPartHome/>} />
       </Routes>
     </div>
   );
