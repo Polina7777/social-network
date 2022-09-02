@@ -1,10 +1,4 @@
 import Input from "../../../generic(ui)/inputs/Input";
-
-// import {ReactComponent as Home} from '../../../../assets/image/icons/home.svg'
-// import {ReactComponent as Group} from '../../../../assets/image/icons/group.svg'
-// import {ReactComponent as Computer} from '../../../../assets/image/icons/computer.svg'
-// import {ReactComponent as Store} from '../../../../assets/image/icons/store.svg'
-// import {ReactComponent as Cell} from '../../../../assets/image/icons/cell.svg'
 import home from '../../../../assets/image/icons/home.svg'
 import people from '../../../../assets/image/icons/people.svg'
 import computer from '../../../../assets/image/icons/computer.svg'
@@ -60,20 +54,6 @@ const iconArrPart2 = [
 
 ]
 
-
-// const iconArr = [
-//   {src:'../../../../assets/image/icons/home.svg',
-//    alt: 'home'},
-//    {src: '../../../../assets/image/icons/group.svg',
-//    alt: 'group'},
-//    {src:'../../../../assets/image/icons/computer.svg',
-//    alt: 'computer'},
-//    {src:'../../../../assets/image/icons/store.svg',
-//    alt: 'store'},
-//    {src:'../../../../assets/image/icons/cell.svg',
-//    alt: 'cell'},
-
-// ]
 
 
 
