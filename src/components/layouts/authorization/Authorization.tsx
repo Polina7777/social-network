@@ -6,6 +6,7 @@ import React, { Suspense, useState } from "react";
 import { AuthorizationProps } from "./Authorization-interface";
 import {useTranslation,Trans, Translation} from 'react-i18next';
 import i18n from "../../i18n/i18n";
+import Logo from "../../generic(ui)/logo/logo/Logo";
 
 ;
 
@@ -26,6 +27,11 @@ const {t} = useTranslation('translation')
 
   return (
     <Suspense fallback="loading">
+    <div className="full-authorization">
+      <div className="authorization-title__box">
+        <Logo className="authorization-title__logo"></Logo>
+        <article className="authorization-title__article">{t('description.authorization.article')}</article>
+      </div>
     <div className="authorization">
       <Input
         type="text"
@@ -64,6 +70,7 @@ const {t} = useTranslation('translation')
         <Button color="green" className="change-language_button" buttonEventHandler={()=> i18n.changeLanguage('ru')}>
           RU
         </Button>
+    </div>
     </div>
     </Suspense>
   );

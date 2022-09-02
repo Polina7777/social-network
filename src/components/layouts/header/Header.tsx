@@ -1,59 +1,25 @@
-import Input from "../../generic(ui)/inputs/Input";
-import Button from "../../generic(ui)/buttons/Button";
+
+import { Routes } from "react-router-dom";
+import { Route } from "react-router-dom";
+
 
 import "./Header.css";
-import Logo from "../../generic(ui)/logo/logo/Logo";
-import { useLocation } from "react-router-dom";
-import { Link } from "react-router-dom";
-import { useState } from "react";
 import { HeaderProps } from "./Header-interface";
-import { useTranslation } from "react-i18next";
+import HeaderBeforeAuthorization from "./general-header/header-before-authorization/Header-before-authorization";
+import HeaderGeneralpage from "./general-header/HeaderGeneralpage";
 
 
-const Header: React.FunctionComponent<HeaderProps> | any = () => {
-  const {t} = useTranslation('translation')
-
-  const [password, setPassword] = useState("");
-  const [login, setLogin] = useState("");
-  const buttonEvent = () => {
-    const body = { password, login };
-    console.log(body);
-  }
-    let location = useLocation();
-    if (location.pathname !== "/accountsearch") {
-      return;
-    }
-  
-    return (
-      <div className="header">
-        <Logo className="header__logo"></Logo>
-        <div className="header_authorization-part">
-          <Input
-            setValueHandler={setLogin}
-            className="header_authorization authorization_login"
-            inputClassName="header-input"
-            placeholder={t('description.authorization.loginPlaceholder')}
-          ></Input>
-          <Input
-            setValueHandler={setPassword}
-            className="header_authorization authorization_password"
-            inputClassName="header-input"
-            placeholder={t('description.authorization.passwordPlaceholder')}
-          ></Input>
-          <Button
-            buttonEventHandler={buttonEvent}
-            color="blue"
-            className="header__button"
-          >
-           {t('description.authorization.loginButton')}
-          </Button>
-
-          <Link to="accountsearch" className="forget-password_header">
-          {t('description.authorization.forgetAccount')}
-          </Link>
-        </div>
-      </div>
-    );
-  };
+const Header: React.FunctionComponent<HeaderProps> = () => {
+  return (
+    <div className="header">
+      <Routes>
+        {/* <Route path="/" element={<Authorization />} /> */}
+        <Route path="accountsearch" element={<HeaderBeforeAuthorization />} />
+        <Route path="registration" element={<HeaderBeforeAuthorization />} />
+        <Route path="generalpage" element={<HeaderGeneralpage/>} />
+      </Routes>
+    </div>
+  );
+};
 
 export default Header;

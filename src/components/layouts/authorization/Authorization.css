@@ -1,3 +1,8 @@
+.full-authorization {
+    display: flex;
+    gap: 70px;
+   
+}
 .authorization {
     display:flex;
     flex-direction: column;
@@ -9,7 +14,18 @@
    box-shadow: 7px 5px 10px 5px rgb(218, 215, 215); 
    margin: 40px auto;
    gap:7px;
+   
   
+}
+.authorization-title__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 330px;
+}
+.authorization-title__article {
+    font-size: 20px;
+    padding-left: 30px
 }
 
 
