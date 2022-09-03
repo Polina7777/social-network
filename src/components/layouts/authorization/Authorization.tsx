@@ -1,21 +1,24 @@
 import './Authorization.css'
 import Button from '../../generic(ui)/buttons/Button'
 import Input from '../../generic(ui)/inputs/Input'
-import { Link } from 'react-router-dom'
+import {Link, useNavigate} from 'react-router-dom'
 import React, { Suspense, useState } from 'react'
 import { AuthorizationProps } from './Authorization-interface'
-import { useTranslation, Trans, Translation } from 'react-i18next'
+import { useTranslation } from 'react-i18next'
 import i18n from '../../../i18n/i18n'
 import Logo from '../../generic(ui)/logo/logo/Logo'
 
 const Authorization: React.FunctionComponent<AuthorizationProps> = () => {
   const { t } = useTranslation('translation')
+  const navigate = useNavigate();
 
   const [password, setPassword] = useState('')
   const [login, setLogin] = useState('')
   const buttonEvent = () => {
+
     const body = { password, login }
     console.log(body)
+    navigate('/generalpage');
   }
 
   return (
