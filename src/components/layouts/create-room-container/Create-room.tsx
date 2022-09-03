@@ -9,13 +9,13 @@ const CreateRoomContainer: React.FC<CreateRoomContainerProps> = () => {
   const { t } = useTranslation('translation')
 
   return (
-    <div className='create-room__container'>
+    <div className='create_room__container'>
       <Icon
         path='/generalpage'
         src={camera}
         alt='camera'
         text={t('description.createNewHistory.title')}
-        className='camera-icon'
+        className='camera_icon'
       />
     </div>
   )

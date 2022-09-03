@@ -1,4 +1,4 @@
-.find-friends__container {
+.find_friends__container {
   display: flex;
   flex-direction: column;
   width: 500px;
@@ -12,12 +12,12 @@
   gap: 7px;
 }
 
-.find-friends__article {
+.find_friends__article {
   font-size: 17px;
   font-weight: 600;
   margin: 0 auto;
 }
-.find-friends__subArticle {
+.find_friends__subArticle {
   font-size: 14px;
   font-weight: 300;
   margin: 0 auto;

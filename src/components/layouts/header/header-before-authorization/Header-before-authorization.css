@@ -1,4 +1,4 @@
-.header-before-authorization {
+.header_before_authorization {
   padding: 5px;
   display: flex;
   flex-direction: row;
@@ -8,7 +8,7 @@
   text-align: center;
   background-color: white;
 }
-.header-before-authorization_authorization-part {
+.header_before_authorization__authorization_part {
   display: flex;
   flex-direction: row;
   justify-content: end;
@@ -16,19 +16,19 @@
   padding-right: 10px;
   gap: 5px;
 }
-.forget-password_header {
+.forget_password__header {
   color: rgb(60, 99, 240);
   text-decoration: none;
   font-size: 12px;
 }
 
 @media (max-width: 500px) {
-  .header-before-authorization {
+  .header_before_authorization {
     display: flex;
     flex-direction: column;
     font-size: 14px;
   }
-  .header-before-authorization-input {
+  .header_before_authorization__input {
     font-size: 14px;
   }
 }

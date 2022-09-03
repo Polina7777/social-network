@@ -1,4 +1,4 @@
-.header-general-page {
+.header__general_page {
   display: flex;
   justify-content: space-between;
   padding: 0 5px 0;
@@ -6,17 +6,17 @@
   width: 100%;
   gap: 70px;
 }
-.search-on-Facebook__box {
+.search_on_Facebook__box {
   display: flex;
   gap: 5px;
   align-items: center;
   padding: 3px;
 }
-.icon-button__box {
+.icon_button__box {
   display: flex;
   align-self: self-end;
 }
-.icon-myPage__box {
+.icon_myPage__box {
   display: flex;
   align-items: center;
 }

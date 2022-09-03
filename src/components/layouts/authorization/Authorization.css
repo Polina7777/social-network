@@ -1,4 +1,4 @@
-.full-authorization {
+.full_authorization {
   display: flex;
   gap: 70px;
 }
@@ -14,13 +14,13 @@
   margin: 40px auto;
   gap: 7px;
 }
-.authorization-title__box {
+.authorization_title__box {
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 330px;
 }
-.authorization-title__article {
+.authorization_title__article {
   font-size: 20px;
   padding-left: 30px;
 }
@@ -31,14 +31,14 @@
   padding: 4px;
 }
 
-.button-link {
+.button_link {
   display: flex;
   justify-content: center;
   text-decoration: none;
   width: 100%;
 }
 
-.forget-password {
+.forget_password {
   text-align: center;
   padding: 15px 0px;
   font-size: small;
@@ -46,7 +46,7 @@
   border-bottom: 3px solid rgba(160, 160, 160, 0.098);
   border-radius: 3px;
 }
-.forget-password__authorization {
+.forget_password__authorization {
   text-align: center;
   font-size: 14px;
   color: rgb(60, 99, 240);

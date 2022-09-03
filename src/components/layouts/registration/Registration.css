@@ -41,13 +41,13 @@
   font-size: 14px;
   color: rgba(0, 0, 0, 0.507);
 }
-.registration__full-name {
+.registration__full_name {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
   margin-bottom: 10px;
 }
-.registration__password-and-email {
+.registration__password_and_email {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -107,7 +107,7 @@
   font-size: 9px;
 }
 
-.registration-page__link {
+.registration_page__link {
   align-self: center;
   text-decoration: none;
   padding: 20px 0;

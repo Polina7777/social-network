@@ -34,10 +34,10 @@ const SelectInput: React.FC<InputProps> = ({
   }
 
   return (
-    <div className={className ?? 'select-input__container'}>
+    <div className={className ?? 'select_input__container'}>
       <> {contextName}</>
       <select
-        className='select-input'
+        className='select_input'
         name={name}
         id={id}
         // onChange={(event) => setValue(event.target.value)}

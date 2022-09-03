@@ -1,5 +1,5 @@
 import Input from "../../../generic(ui)/inputs/Input";
-import {ReactComponent as HomeIcon} from '../../../../assets/image/icons/home2.svg'
+
 import home from '../../../../assets/image/icons/home2.svg'
 import people from '../../../../assets/image/icons/people2.svg'
 import monitor from '../../../../assets/image/icons/monitor.svg'
@@ -22,20 +22,20 @@ declare module '*.svg'
 const iconArrPart1 = [
 
   {src:home,
-    className:'icon-image__bordered',
+    className:'icon_image__bordered',
    alt: 'home',
   path:'/generalpage'},
 
-  { src: people, className: 'icon-image__bordered', alt: 'people', path: '/friends' },
-  { src: monitor, className: 'icon-image__bordered', alt: 'monitor', path: '/facebookWatch' },
-  { src: store, className: 'icon-image__bordered', alt: 'store', path: '/store' },
-  { src: game, className: 'icon-image__bordered', alt: 'games', path: '/games' },
+  { src: people, className: 'icon_image__bordered', alt: 'people', path: '/friends' },
+  { src: monitor, className: 'icon_image__bordered', alt: 'monitor', path: '/facebookWatch' },
+  { src: store, className: 'icon_image__bordered', alt: 'store', path: '/store' },
+  { src: game, className: 'icon_image__bordered', alt: 'games', path: '/games' },
 ]
 const iconArrPart2 = [
-  { src: cell, className: 'icon-image__circled', alt: 'cell', path: '/more' },
-  { src: message, className: 'icon-image__circled', alt: 'message', path: '/messages' },
-  { src: bell, className: 'icon-image__circled', alt: 'bell', path: '/notification' },
-  { src: accounts, className: 'icon-image__avatar', alt: 'avatar', path: '/account' },
+  { src: cell, className: 'icon_image__circled', alt: 'cell', path: '/more' },
+  { src: message, className: 'icon_image__circled', alt: 'message', path: '/messages' },
+  { src: bell, className: 'icon_image__circled', alt: 'bell', path: '/notification' },
+  { src: accounts, className: 'icon_image__avatar', alt: 'avatar', path: '/account' },
 ]
 
 const HeaderGeneralpage: React.FunctionComponent<HeaderGeneralProps> | any = () => {
@@ -54,21 +54,20 @@ const HeaderGeneralpage: React.FunctionComponent<HeaderGeneralProps> | any = () 
     // }
   
     return (
-      <div className="header-general-page">
-        <HomeIcon/>
-        <div className='search-on-Facebook__box'>
-        <LogoSmall className="header-small__logo"></LogoSmall>
+      <div className="header__general_page">
+        <div className='search_on_Facebook__box'>
+        <LogoSmall className="header_small__logo"></LogoSmall>
           <Input
             setValueHandler={setSearchRequest}
-            className="header__search-on-facebook "
-            inputClassName="search-on-facebook__input"
+            className="header__search_on_facebook "
+            inputClassName="search_on_facebook__input"
             placeholder={t('description.headerMyPage.search')}
           ></Input>
      </div>
-     <div className="icon-button__box">
+     <div className="icon_button__box">
        {iconArrPart1.map((item,index) => <Icon path={item.path} src={item.src} className={item.className} alt={item.alt} key={index} />)} 
      </div>
-     <div className="icon-myPage__box">
+     <div className="icon_myPage__box">
      {iconArrPart2.map((item,index) => <Icon path={item.path} src={item.src} className={item.className} alt={item.alt} key={index} />)} 
      </div>
           
@@ -76,3 +75,6 @@ const HeaderGeneralpage: React.FunctionComponent<HeaderGeneralProps> | any = () 
       
     );
   };
+
+
+  export default HeaderGeneralpage

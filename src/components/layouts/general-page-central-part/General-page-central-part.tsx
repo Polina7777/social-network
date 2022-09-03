@@ -7,7 +7,7 @@ import './General-page-central-part.css'
 
 const GeneralPageCentralPartHome: React.FC<GeneralPageCentralPartHomeProps> = () => {
   return (
-    <div className='general-page-central-part-home'>
+    <div className='general_page__central_part-home'>
       <CreateNewHistoryBox />
       <ShareSomethingNewContainer />
       <CreateRoomContainer />

@@ -48,7 +48,7 @@ const Registration: React.FunctionComponent<RegistrationProps> = () => {
               {t('description.registration.subTitleRegistration')}
             </h2>
           </header>
-          <div className='registration__full-name'>
+          <div className='registration__full_name'>
             <Input
               setValueHandler={setName}
               className='registration__input'
@@ -60,7 +60,7 @@ const Registration: React.FunctionComponent<RegistrationProps> = () => {
               placeholder={t('description.registration.surname')}
             ></Input>
           </div>
-          <div className='registration__password-and-email'>
+          <div className='registration__password_and_email'>
             <Input
               setValueHandler={setLogin}
               className='registration__input'
@@ -78,7 +78,7 @@ const Registration: React.FunctionComponent<RegistrationProps> = () => {
           <div className='sex'>
             <h5 className='sex__title'>{t('description.registration.sex.sex')}</h5>
             <div className='sex__boxes'>
-              <div className='sex__box woman-box'>
+              <div className='sex__box woman_box'>
                 <label htmlFor='woman'>{t('description.registration.sex.woman')}</label>
                 <Input
                   setValueHandler={setSex}
@@ -89,7 +89,7 @@ const Registration: React.FunctionComponent<RegistrationProps> = () => {
                   className='woman'
                 ></Input>
               </div>
-              <div className='sex__box man-box'>
+              <div className='sex__box man_box'>
                 <label htmlFor='man'>{t('description.registration.sex.man')}</label>
                 <Input
                   setValueHandler={setSex}
@@ -100,7 +100,7 @@ const Registration: React.FunctionComponent<RegistrationProps> = () => {
                   className='man'
                 ></Input>
               </div>
-              <div className='sex__box other-box'>
+              <div className='sex__box other_box'>
                 <label htmlFor='other'>{t('description.registration.sex.other')}</label>
                 <Input
                   setValueHandler={setSex}
@@ -114,7 +114,7 @@ const Registration: React.FunctionComponent<RegistrationProps> = () => {
             </div>
           </div>
           <div className='other_information'>
-            <h3 className='other_information-text'>
+            <h3 className='other_information__text'>
               {t('description.registration.otherInformationText')}
               <Link to={'#'}>{t('description.registration.learnMore')}</Link>
             </h3>
@@ -124,33 +124,33 @@ const Registration: React.FunctionComponent<RegistrationProps> = () => {
             <Button color='green' buttonEventHandler={buttonEvent} className='registration__button'>
               {t('description.registration.registration')}
             </Button>
-            <Link className='registration-page__link' to='/'>
+            <Link className='registration_page__link' to='/'>
               {t('description.registration.question')}
             </Link>
             <Button
               color='green'
-              className='change-language_button'
+              className='change_language__button'
               buttonEventHandler={() => i18n.changeLanguage('en')}
             >
               EN
             </Button>
             <Button
               color='green'
-              className='change-language_button'
+              className='change_language__button'
               buttonEventHandler={() => i18n.changeLanguage('ru')}
             >
               RU
             </Button>
             <Button
               color='green'
-              className='change-language_button'
+              className='change_language__button'
               buttonEventHandler={() => i18n.changeLanguage('de')}
             >
               DE
             </Button>
             <Button
               color='green'
-              className='change-language_button'
+              className='change_language__button'
               buttonEventHandler={() => i18n.changeLanguage('es')}
             >
               ES

@@ -18,37 +18,37 @@ const ShareSomethingNewContainer: React.FC<ShareSomethingNewContainerProps> = ()
   const iconsActionButtonsArr = [
     {
       src: camera,
-      className: 'icon-colored',
+      className: 'icon_colored',
       alt: 'camera',
       path: '/generalpage',
       text: t('description.createNewHistory.life'),
     },
     {
       src: picture,
-      className: 'icon-colored',
+      className: 'icon_colored',
       alt: 'pictures',
       path: '/generalpage',
       text: t('description.createNewHistory.fotoVideo'),
     },
     {
       src: smile,
-      className: 'icon-colored',
+      className: 'icon_colored',
       alt: 'smile',
       path: '/generalpage',
       text: t('description.createNewHistory.feelingAction'),
     },
   ]
   return (
-    <div className='share-something-new__container'>
-      <div className='new-information__box'>
-        <Icon path='/generalpage' src={accounts} className='account-foto' />
+    <div className='share_something_new__container'>
+      <div className='new_information__box'>
+        <Icon path='/generalpage' src={accounts} className='account_foto' />
         <Input
-          className='new-information'
+          className='new_information'
           placeholder={t('description.createNewHistory.question')}
           setValueHandler={setNews}
         />
       </div>
-      <div className='icons-action__buttons'>
+      <div className='icons_action__buttons'>
         {iconsActionButtonsArr.map((item, index) => (
           <Icon
             path={item.path}

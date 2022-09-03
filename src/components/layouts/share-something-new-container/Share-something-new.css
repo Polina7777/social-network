@@ -1,4 +1,4 @@
-.share-something-new__container {
+.share_something_new__container {
   display: flex;
   flex-direction: column;
   border-radius: 10px;
@@ -9,25 +9,25 @@
   margin-bottom: 7px;
 }
 
-.new-information__box {
+.new_information__box {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid rgba(128, 128, 128, 0.475);
-  padding: 5px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.336);
+  padding: 5px 5px 10px;
 }
-.new-information {
+.new_information {
   width: 100%;
 }
-.icons-action__buttons {
+.icons_action__buttons {
   display: flex;
   justify-content: space-between;
-  padding: 5px 25px 0;
+  padding: 10px 25px 0px;
 }
-.account-foto__div {
+.account_foto__div {
   margin-right: 7px;
 }
 
-.account-foto {
+.account_foto {
   display: flex;
   width: 50px;
 }

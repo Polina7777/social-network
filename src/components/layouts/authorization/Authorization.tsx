@@ -23,10 +23,10 @@ const Authorization: React.FunctionComponent<AuthorizationProps> = () => {
 
   return (
     <Suspense fallback='loading'>
-      <div className='full-authorization'>
-        <div className='authorization-title__box'>
-          <Logo className='authorization-title__logo'></Logo>
-          <article className='authorization-title__article'>
+      <div className='full_authorization'>
+        <div className='authorization_title__box'>
+          <Logo className='authorization_title__logo'></Logo>
+          <article className='authorization_title__article'>
             {t('description.authorization.article')}
           </article>
         </div>
@@ -47,24 +47,24 @@ const Authorization: React.FunctionComponent<AuthorizationProps> = () => {
           <Button color='blue' buttonEventHandler={buttonEvent} className='authorization__button'>
             {t('description.authorization.loginButton')}
           </Button>
-          <Link to='accountsearch' className='forget-password__authorization'>
+          <Link to='accountsearch' className='forget_password__authorization'>
             {t('description.authorization.forgetAccount')}
           </Link>
-          <Link to='registration' className='button-link'>
+          <Link to='registration' className='button_link'>
             <Button color='green' className='authorization__button'>
               {t('description.authorization.createNewAccount')}
             </Button>
           </Link>
           <Button
             color='green'
-            className='change-language_button'
+            className='change_language__button'
             buttonEventHandler={() => i18n.changeLanguage('en')}
           >
             EN
           </Button>
           <Button
             color='green'
-            className='change-language_button'
+            className='change_language__button'
             buttonEventHandler={() => i18n.changeLanguage('ru')}
           >
             RU

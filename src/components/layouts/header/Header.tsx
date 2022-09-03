@@ -2,7 +2,7 @@ import { Routes, Route } from 'react-router-dom'
 
 import './Header.css'
 import { HeaderProps } from './Header-interface'
-import HeaderBeforeAuthorization from './general-header/header-before-authorization/Header-before-authorization'
+import HeaderBeforeAuthorization from './header-before-authorization/Header-before-authorization'
 import HeaderGeneralpage from './general-header/HeaderGeneralpage'
 
 const Header: React.FunctionComponent<HeaderProps> = () => {

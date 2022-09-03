@@ -7,11 +7,11 @@ import { useTranslation } from 'react-i18next'
 const CreateNewHistoryBox: React.FC<CreateNewHistoryBoxProps> = (className) => {
   const { t } = useTranslation('translation')
   return (
-    <div className='create-new-history__box'>
+    <div className='create_new_history__box'>
       <Icon path='/generalpage' src={plus} className='plus' />
-      <div className='create-new-history__title'>
-        <p className='create-new-history__title'> {t('description.createNewHistory.title')}</p>
-        <p className='create-new-history__article'> {t('description.createNewHistory.article')}</p>
+      <div className='create_new_history__title'>
+        <p className='create_new_history__title'> {t('description.createNewHistory.title')}</p>
+        <p className='create_new_history__article'> {t('description.createNewHistory.article')}</p>
       </div>
     </div>
   )

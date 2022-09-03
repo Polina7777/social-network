@@ -1,8 +1,8 @@
-import Input from '../../../../generic(ui)/inputs/Input'
-import Button from '../../../../generic(ui)/buttons/Button'
+import Input from '../../../generic(ui)/inputs/Input'
+import Button from '../../../generic(ui)/buttons/Button'
 
 import './Header-before-authorization.css'
-import Logo from '../../../../generic(ui)/logo/logo/Logo'
+import Logo from '../../../generic(ui)/logo/logo/Logo'
 import { useLocation, Link } from 'react-router-dom'
 import { useState } from 'react'
 import { HeaderBeforeAuthorizationProps } from './Header-before-authorization-interrface'
@@ -25,30 +25,30 @@ const HeaderBeforeAuthorization:
   }
 
   return (
-    <div className='header-before-authorization'>
-      <Logo className='header-before-authorization__logo'></Logo>
-      <div className='header-before-authorization_authorization-part'>
+    <div className='header_before_authorization'>
+      <Logo className='header_before_authorization__logo'></Logo>
+      <div className='header_before_authorization__authorization_part'>
         <Input
           setValueHandler={setLogin}
-          className='header-before-authorization_authorization authorization_login'
-          inputClassName='header-before-authorization-input'
+          className='header_before_authorization__authorization authorization_login'
+          inputClassName='header_before_authorization__input'
           placeholder={t('description.authorization.loginPlaceholder')}
         ></Input>
         <Input
           setValueHandler={setPassword}
-          className='header-before-authorization_authorization authorization_password'
-          inputClassName='header-before-authorization-input'
+          className='header_before_authorization__authorization authorization_password'
+          inputClassName='header_before_authorization__input'
           placeholder={t('description.authorization.passwordPlaceholder')}
         ></Input>
         <Button
           buttonEventHandler={buttonEvent}
           color='blue'
-          className='header-before-authorization__button'
+          className='header_before_authorization__button'
         >
           {t('description.authorization.loginButton')}
         </Button>
 
-        <Link to='accountsearch' className='forget-password_header'>
+        <Link to='accountsearch' className='forget_password__header'>
           {t('description.authorization.forgetAccount')}
         </Link>
       </div>

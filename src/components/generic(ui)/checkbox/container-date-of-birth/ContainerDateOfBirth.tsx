@@ -44,11 +44,11 @@ const ContainerDateOfBirth: React.FunctionComponent<ContainerDateOfBirthProps> =
   }
 
   return (
-    <div className='date-of-birth__container'>
-      <p className='date-of-birth__title'>
+    <div className='date_of_birth__container'>
+      <p className='date_of_birth__title'>
         {t('description.registration.dateOfBirth.dateOfBirth')}
       </p>
-      <div className='day-of-birth__container'>
+      <div className='day_of_birth__container'>
         <SelectInput
           selectHandlerChange={dateSelect}
           name='day'

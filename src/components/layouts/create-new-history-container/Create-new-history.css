@@ -1,4 +1,4 @@
-.create-new-history__box {
+.create_new_history__box {
   display: flex;
   width: 500px;
   background: white;
@@ -17,14 +17,14 @@
 .plus {
   width: 30px;
 }
-.create-new-history__title {
+.create_new_history__title {
   padding: 3px 0;
   margin: auto 0;
   font-size: 17px;
   color: rgba(0, 0, 0, 0.66);
   font-weight: 500;
 }
-.create-new-history__article {
+.create_new_history__article {
   margin: auto 0;
   font-size: 14px;
   color: rgba(0, 0, 0, 0.66);

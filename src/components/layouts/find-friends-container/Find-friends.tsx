@@ -8,11 +8,11 @@ import './Find-friends.css'
 const FindFriendsContainer: React.FC<FindFriendsContainerProps> = () => {
   const { t } = useTranslation('translation')
   return (
-    <div className='find-friends__container'>
-      <p className='find-friends__article'>{t('description.findFriends.article')}</p>
-      <p className='find-friends__subArticle'>{t('description.findFriends.subArticle')}</p>
-      <Link to=''>
-        <Button className='find-friend__button' color='blue'>
+    <div className='find_friends__container'>
+      <p className='find_friends__article'>{t('description.findFriends.article')}</p>
+      <p className='find_friends__subArticle'>{t('description.findFriends.subArticle')}</p>
+      <Link to='/friends'>
+        <Button className='find_friend__button' color='blue'>
           {t('description.findFriends.buttonName')}
         </Button>
       </Link>

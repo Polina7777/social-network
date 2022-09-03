@@ -1,4 +1,4 @@
-.account-search {
+.account_search {
   display: flex;
   flex-direction: column;
   width: 470px;
@@ -11,14 +11,14 @@
   margin: 40px auto;
 }
 
-.account-search__title {
+.account_search__title {
   border-bottom: 2px solid rgba(160, 159, 159, 0.208);
   border-radius: 3px;
   padding-bottom: 15px;
   font-size: 20px;
 }
 
-.account-search__box {
+.account_search__box {
   width: 97%;
   font-size: 17px;
   margin-bottom: 20px;
@@ -27,29 +27,29 @@
   border-radius: 3px;
 }
 
-.account-search__buttons {
+.account_search__buttons {
   display: flex;
   flex-direction: row;
   align-content: baseline;
   align-self: flex-end;
   padding-right: 17px;
-  padding-top: 17px;
+
 }
 
-.account-search__text {
+.account_search__text {
   margin: 0;
   font-weight: 400;
   font-size: 19px;
   line-break: anywhere;
 }
 /* @media(max-width:500px) {
-    .account-search__text{
+    .account_search__text{
         font-size: 13px;
     }
-    .account-search__box{
+    .account_search__box{
         font-size: 11px;
     }
-    .account-search__buttons{
+    .account_search__buttons{
         align-self: center;
     }
 } */
