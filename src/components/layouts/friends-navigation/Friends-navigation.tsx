@@ -9,6 +9,7 @@ import friendrequest from '../../../assets/image/icons/friendrequest.svg'
 import friendsrecommendation from '../../../assets/image/icons/friendsrecommendation.svg'
 import allfriends from '../../../assets/image/icons/allfriends.svg'
 import birthday from '../../../assets/image/icons/birthday.svg'
+import Icon from "../../generic(ui)/icon/Icon"
 
 
 const FriendsNavigationContainer:React.FC<FriendsNavigationContainerProps> = () => {
@@ -56,7 +57,7 @@ const FriendsNavigationContainer:React.FC<FriendsNavigationContainerProps> = () 
    <div className="friends-navigation__container">
       <div className="friends__title">
         <p className="friends">{t('description.friends.title')}</p>
-        <Icon src={gear} className='icon-gear' alt='gear'/>
+        <Icon src={gear} className='icon-gear' alt='gear' path={""}/>
       </div>
       <div className="friends-navigation__list">
       {friendsIconsArr.map((item,index) => <Icon path={item.path} src={item.src} className={item.className} alt={item.alt} key={index} />)} 

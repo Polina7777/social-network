@@ -1,10 +1,5 @@
 import Input from "../../../generic(ui)/inputs/Input";
-
-// import {ReactComponent as Home} from '../../../../assets/image/icons/home.svg'
-// import {ReactComponent as Group} from '../../../../assets/image/icons/group.svg'
-// import {ReactComponent as Computer} from '../../../../assets/image/icons/computer.svg'
-// import {ReactComponent as Store} from '../../../../assets/image/icons/store.svg'
-// import {ReactComponent as Cell} from '../../../../assets/image/icons/cell.svg'
+import {ReactComponent as HomeIcon} from '../../../../assets/image/icons/home2.svg'
 import home from '../../../../assets/image/icons/home2.svg'
 import people from '../../../../assets/image/icons/people2.svg'
 import monitor from '../../../../assets/image/icons/monitor.svg'
@@ -26,6 +21,7 @@ declare module "*.svg";
 
 
 const iconArrPart1 = [
+
   {src:home,
     className:'icon-image__bordered',
    alt: 'home',
@@ -90,6 +86,7 @@ const HeaderGeneralpage: React.FunctionComponent<HeaderGeneralProps> | any = () 
   
     return (
       <div className="header-general-page">
+        <HomeIcon/>
         <div className='search-on-Facebook__box'>
         <LogoSmall className="header-small__logo"></LogoSmall>
           <Input
