@@ -1,69 +1,63 @@
-.green{
-    background-color:rgb(124, 209, 40);
-    color: white;
-    border: 2px solid rgb(124, 209, 40);
-    border-radius: 5px;
-    width: 70%;
-    padding: 9px 5px;
-   
-    font-size: 12px;
-  
+.green {
+  background-color: rgb(124, 209, 40);
+  color: white;
+  border: 2px solid rgb(124, 209, 40);
+  border-radius: 5px;
+  width: 70%;
+  padding: 9px 5px;
+
+  font-size: 12px;
 }
 .blue {
-    background-color:rgb(60, 99, 240);
-    color: white;
-    border: 2px solid rgb(60, 99, 240);
-    border-radius: 5px;
-   padding: 7px 0;
-   text-align: center;
-   
+  background-color: rgb(60, 99, 240);
+  color: white;
+  border: 2px solid rgb(60, 99, 240);
+  border-radius: 5px;
+  padding: 7px 0;
+  text-align: center;
 }
 
-
 .light {
-    align-items: center;
-    padding: 8px 15px;
-    margin-right: 10px;
-    background-color: rgb(234, 241, 241);
-    border:2px solid rgba(190, 187, 187, 0.208);
-    border-radius: 4px;
-    color: rgba(0, 0, 0, 0.66);
-    font-size: 16px;
-   
-    
+  align-items: center;
+  padding: 8px 15px;
+  margin-right: 10px;
+  background-color: rgb(234, 241, 241);
+  border: 2px solid rgba(190, 187, 187, 0.208);
+  border-radius: 4px;
+  color: rgba(0, 0, 0, 0.66);
+  font-size: 16px;
 }
 
 .header-before-authorization__button-blue {
-    background-color:rgb(60, 99, 240);
-    color: white;
-    border: 2px solid rgb(60, 99, 240);
-    border-radius: 5px;
-    width: fit-content;
-    border-radius: 5px;
-    padding: 4px 8px;
-    height: 50%;
-    margin: 0px 5px;
-   
+  background-color: rgb(60, 99, 240);
+  color: white;
+  border: 2px solid rgb(60, 99, 240);
+  border-radius: 5px;
+  width: fit-content;
+  border-radius: 5px;
+  padding: 4px 8px;
+  height: 50%;
+  margin: 0px 5px;
 }
 
 .account-search__button-blue {
-    font-size: 16px;
-    padding: 8px 19px;
-    font-weight: 500;
+  font-size: 16px;
+  padding: 8px 19px;
+  font-weight: 500;
 }
 .registration__button-green {
-    align-self: center;
-    font-size: 19px;
-    font-weight: 600;
+  align-self: center;
+  font-size: 19px;
+  font-weight: 600;
 }
-.footer__button-light{
-    padding: 0 3px;
-    margin: auto;
-    margin-left: 10px;
-    font-weight: 200;
-    font-size: 15px;
+.footer__button-light {
+  padding: 0 3px;
+  margin: auto;
+  margin-left: 10px;
+  font-weight: 200;
+  font-size: 15px;
 }
 
 .find-friend__button-blue {
-    padding: 7px 7px;
+  padding: 7px 7px;
 }

@@ -1,7 +1,6 @@
-import { useTranslation } from "react-i18next"
-import { FriendsNavigationContainerProps } from "./Friends-navigation-interface"
+import { useTranslation } from 'react-i18next'
+import { FriendsNavigationContainerProps } from './Friends-navigation-interface'
 import './Friends-navigation.css'
-
 
 import gear from '../../../assets/image/icons/gear.svg'
 import friendsgeneral from './../../../assets/image/icons/friendsgeneral.svg'
@@ -59,13 +58,19 @@ const FriendsNavigationContainer:React.FC<FriendsNavigationContainerProps> = () 
         <p className="friends">{t('description.friends.title')}</p>
         <Icon src={gear} className='icon-gear' alt='gear' path={""}/>
       </div>
-      <div className="friends-navigation__list">
-      {friendsIconsArr.map((item,index) => <Icon path={item.path} src={item.src} className={item.className} alt={item.alt} key={index} />)} 
+      <div className='friends-navigation__list'>
+        {friendsIconsArr.map((item, index) => (
+          <Icon
+            path={item.path}
+            src={item.src}
+            className={item.className}
+            alt={item.alt}
+            key={index}
+          />
+        ))}
       </div>
-
-   </div>
-    )
+    </div>
+  )
 }
-
 
 export default FriendsNavigationContainer

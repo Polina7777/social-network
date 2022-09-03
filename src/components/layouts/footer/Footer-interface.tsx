@@ -1,5 +1,4 @@
-
 export interface FooterProps {
-    type?: string 
-    buttonClassName?:string
+  type?: string
+  buttonClassName?: string
 }

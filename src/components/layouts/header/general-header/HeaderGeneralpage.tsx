@@ -9,16 +9,15 @@ import message from '../../../../assets/image/icons/message.svg'
 import bell from '../../../../assets/image/icons/bell.svg'
 import accounts from '../../../../assets/image/icons/accounts.svg'
 import game from '../../../../assets/image/icons/game.svg'
-import "./HeaderGeneralpage.css";
-import { useLocation } from "react-router-dom";
-import { useState } from "react";
-import { HeaderGeneralProps } from "./HeaderGeneralpage-interface";
-import { useTranslation } from "react-i18next";
+import './HeaderGeneralpage.css'
+import { useLocation } from 'react-router-dom'
+import { useState } from 'react'
+import { HeaderGeneralProps } from './HeaderGeneralpage-interface'
+import { useTranslation } from 'react-i18next'
 
-import LogoSmall from "../../../generic(ui)/logo/logoSmall/Logo-small";
-import Icon from "../../../generic(ui)/icon/Icon";
-declare module "*.svg";
-
+import LogoSmall from '../../../generic(ui)/logo/logoSmall/Logo-small'
+import Icon from '../../../generic(ui)/icon/Icon'
+declare module '*.svg'
 
 const iconArrPart1 = [
 
@@ -27,57 +26,27 @@ const iconArrPart1 = [
    alt: 'home',
   path:'/generalpage'},
 
-   {src:people,
-    className:'icon-image__bordered',
-   alt: 'people',
-   path:'/friends'},
-   {src:monitor,
-    className:'icon-image__bordered',
-   alt: 'monitor',
-   path:'/facebookWatch'},
-   {src:store,
-   className:'icon-image__bordered',
-   alt: 'store',
-   path:'/store'},
-   {src:game,
-    className:'icon-image__bordered',
-   alt: 'games',
-   path:'/games'},
-
+  { src: people, className: 'icon-image__bordered', alt: 'people', path: '/friends' },
+  { src: monitor, className: 'icon-image__bordered', alt: 'monitor', path: '/facebookWatch' },
+  { src: store, className: 'icon-image__bordered', alt: 'store', path: '/store' },
+  { src: game, className: 'icon-image__bordered', alt: 'games', path: '/games' },
 ]
 const iconArrPart2 = [
-  {src:cell,
-    className:'icon-image__circled',
-   alt: 'cell',
-   path:'/more'},
-  {src:message,
-    className:'icon-image__circled',
-   alt: 'message',
-   path:'/messages'},
-   {src:bell,
-    className:'icon-image__circled',
-   alt: 'bell',
-   path:'/notification'},
-   {src:accounts,
-    className:'icon-image__avatar',
-   alt: 'avatar',
-   path:'/account'},
-   
-
+  { src: cell, className: 'icon-image__circled', alt: 'cell', path: '/more' },
+  { src: message, className: 'icon-image__circled', alt: 'message', path: '/messages' },
+  { src: bell, className: 'icon-image__circled', alt: 'bell', path: '/notification' },
+  { src: accounts, className: 'icon-image__avatar', alt: 'avatar', path: '/account' },
 ]
 
-
-
-
 const HeaderGeneralpage: React.FunctionComponent<HeaderGeneralProps> | any = () => {
-  const {t} = useTranslation('translation')
+  const { t } = useTranslation('translation')
 
-  const [password, setPassword] = useState("");
-  const [login, setLogin] = useState("");
-  const[searchRequest,setSearchRequest] = useState("");
+  const [password, setPassword] = useState('')
+  const [login, setLogin] = useState('')
+  const [searchRequest, setSearchRequest] = useState('')
   const buttonEvent = () => {
-    const body = { password, login };
-    console.log(body);
+    const body = { password, login }
+    console.log(body)
   }
     // let location = useLocation();
     // if (location.pathname !== "/accountsearch") {
@@ -107,5 +76,3 @@ const HeaderGeneralpage: React.FunctionComponent<HeaderGeneralProps> | any = () 
       
     );
   };
-
-export default HeaderGeneralpage;

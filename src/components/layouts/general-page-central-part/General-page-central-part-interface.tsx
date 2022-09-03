@@ -1,5 +1,3 @@
-
-
 export interface GeneralPageCentralPartHomeProps {
-    className?:string
+  className?: string
 }

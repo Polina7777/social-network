@@ -1,72 +1,68 @@
 .icon-image__bordered__div {
-    display: flex;
-    justify-content: center;
-    border-bottom: 3px solid blue;
-    width: 100px;
-    margin-right: 5px
- 
+  display: flex;
+  justify-content: center;
+  border-bottom: 3px solid blue;
+  width: 100px;
+  margin-right: 5px;
 }
 .icon-image__bordered {
-    display: flex;
-    justify-content: center;
-    width: 17px;
-
-    
+  display: flex;
+  justify-content: center;
+  width: 17px;
 }
 
-.icon-image{
-    width:30px;
-}  
-.icon-image__avatar{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: #8080806e;
-    border-radius: 50%;
-    width:30px;
-    padding: 7px;
+.icon-image {
+  width: 30px;
 }
-.icon-image__circled__div{
-    margin-right: 5px;
+.icon-image__avatar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #8080806e;
+  border-radius: 50%;
+  width: 30px;
+  padding: 7px;
+}
+.icon-image__circled__div {
+  margin-right: 5px;
 }
 
 .icon-image__circled {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 
-    background-color: #8080806e;
-    border-radius: 50%;
-    width:30px;
-    padding: 7px;
+  background-color: #8080806e;
+  border-radius: 50%;
+  width: 30px;
+  padding: 7px;
 }
 
 .icon-colored {
-    width: 20px;
-    margin-right: 10px;
+  width: 20px;
+  margin-right: 10px;
 }
 
 .icon-colored__div {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 .camera-icon {
-    width: 20px;
-    margin-right: 10px;
+  width: 20px;
+  margin-right: 10px;
 }
 
-.camera-icon__div{
-    display: flex;
-    justify-content:space-between ;
-    padding: 0px 10px;
+.camera-icon__div {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 10px;
 
-    border-radius: 20px;
-    border: 2px solid #80c5e86e;
+  border-radius: 20px;
+  border: 2px solid #80c5e86e;
 }
 
 .text {
-    font-size: 12px;
-    text-decoration: none;
-    margin: 0;
+  font-size: 12px;
+  text-decoration: none;
+  margin: 0;
 }
-

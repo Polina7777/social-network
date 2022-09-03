@@ -1,3 +1,3 @@
 export interface FriendsNavigationContainerProps {
-    className?:string
+  className?: string
 }

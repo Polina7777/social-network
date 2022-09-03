@@ -1,25 +1,21 @@
+import { Routes, Route } from 'react-router-dom'
 
-import { Routes } from "react-router-dom";
-import { Route } from "react-router-dom";
-
-
-import "./Header.css";
-import { HeaderProps } from "./Header-interface";
-import HeaderBeforeAuthorization from "./general-header/header-before-authorization/Header-before-authorization";
-import HeaderGeneralpage from "./general-header/HeaderGeneralpage";
-
+import './Header.css'
+import { HeaderProps } from './Header-interface'
+import HeaderBeforeAuthorization from './general-header/header-before-authorization/Header-before-authorization'
+import HeaderGeneralpage from './general-header/HeaderGeneralpage'
 
 const Header: React.FunctionComponent<HeaderProps> = () => {
   return (
-    <div className="header">
+    <div className='header'>
       <Routes>
         {/* <Route path="/" element={<Authorization />} /> */}
-        <Route path="accountsearch" element={<HeaderBeforeAuthorization />} />
-        <Route path="registration" element={<HeaderBeforeAuthorization />} />
-        <Route path="generalpage" element={<HeaderGeneralpage/>} />
+        <Route path='accountsearch' element={<HeaderBeforeAuthorization />} />
+        <Route path='registration' element={<HeaderBeforeAuthorization />} />
+        <Route path='generalpage' element={<HeaderGeneralpage />} />
       </Routes>
     </div>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header
