@@ -1,3 +1,3 @@
 export interface FindFriendsContainerProps {
-    className?: string 
+  className?: string
 }

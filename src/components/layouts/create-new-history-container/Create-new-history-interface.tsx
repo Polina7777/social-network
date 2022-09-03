@@ -1,5 +1,3 @@
-
 export interface CreateNewHistoryBoxProps {
-    className?:string
+  className?: string
 }
-

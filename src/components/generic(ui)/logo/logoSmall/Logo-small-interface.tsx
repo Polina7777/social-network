@@ -1,3 +1,3 @@
-export interface LogoSmallProps{
-    className?: string
+export interface LogoSmallProps {
+  className?: string
 }

@@ -1,27 +1,24 @@
 .find-friends__container {
-    display: flex;
-    flex-direction: column;
-    width: 500px;
-    background: white;
-    box-shadow: 7px 5px 10px 5px rgb(218 215 215);
-    border-radius: 10px;
-    padding: 10px 15px;
-    margin-bottom: 7px;
-    color: rgba(0, 0, 0, 0.712);
-    text-align: center;
-    gap: 7px;
-    
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  background: white;
+  box-shadow: 7px 5px 10px 5px rgb(218 215 215);
+  border-radius: 10px;
+  padding: 10px 15px;
+  margin-bottom: 7px;
+  color: rgba(0, 0, 0, 0.712);
+  text-align: center;
+  gap: 7px;
 }
 
 .find-friends__article {
   font-size: 17px;
   font-weight: 600;
-    margin:0 auto;
- 
+  margin: 0 auto;
 }
 .find-friends__subArticle {
-    font-size: 14px;
+  font-size: 14px;
   font-weight: 300;
-    margin: 0 auto;
+  margin: 0 auto;
 }
-

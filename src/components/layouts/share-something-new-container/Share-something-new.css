@@ -1,34 +1,33 @@
 .share-something-new__container {
-    display: flex;
-    flex-direction: column;
-    border-radius: 10px;
-    width: 500px;
-    padding: 7px;
-    background: white;
-    box-shadow: 7px 5px 10px 5px rgb(218 215 215);
-    margin-bottom: 7px;
-
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  width: 500px;
+  padding: 7px;
+  background: white;
+  box-shadow: 7px 5px 10px 5px rgb(218 215 215);
+  margin-bottom: 7px;
 }
 
 .new-information__box {
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid rgba(128, 128, 128, 0.475);
-    padding: 5px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.475);
+  padding: 5px;
 }
 .new-information {
-    width: 100%;
+  width: 100%;
 }
 .icons-action__buttons {
-    display: flex;
-    justify-content: space-between;
-    padding: 5px 25px 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 25px 0;
 }
-.account-foto__div{
-    margin-right: 7px;
+.account-foto__div {
+  margin-right: 7px;
 }
 
 .account-foto {
-    display: flex;
-    width: 50px;
+  display: flex;
+  width: 50px;
 }
